@@ -6,6 +6,7 @@ const Home = () => (
 		<Head>
 			<title>Next.js TailwindCSS</title>
 			<link rel="icon" href="/favicon.ico" />
+			<link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
 		</Head>
 
 		<div className="container mx-auto">
