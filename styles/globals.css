@@ -6,6 +6,9 @@
 @tailwind utilities;
 
 /* App CSS */
+.sfd-purple-text{
+    color: #790ABF;
+}
 .sfd-menu:hover, .sfd-menu.active {
     color: #D033D3;
 }
