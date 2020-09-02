@@ -4,8 +4,8 @@ import Head from 'next/head'
 const Home = () => (
 	<div>
 		<Head>
-			<title>Next.js TailwindCSS</title>
-			<link rel="icon" href="/favicon.ico" />
+			<title>So.Fa.Dog</title>
+			<link rel="icon" href="/color-logo.ico" />
 			<link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
 		</Head>
 
