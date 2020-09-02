@@ -26,6 +26,38 @@ const Home = () => (
 					</div>
 				</div>
 			</main>
+			<div className="py-12 bg-white mt-10">
+				<div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-24">
+					<div className="lg:text-center">
+						<h3 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-5xl sm:leading-10">
+							What’s so special about us?
+      					</h3>
+					</div>
+
+					<div className="mt-20">
+						<ul className="md:grid md:grid-cols-2 md:col-gap-8 md:row-gap-10">
+							<li>
+								<div className="flex">
+									<div className="mx-auto">
+										<img className="w-full md:w-3/4" src="/no_ads.svg"></img>
+									</div>
+								</div>
+							</li>
+							<li className="flex items-center">
+								<div className="flex">
+									<div className="ml-4">
+										<h4 className="sfd-purple-text text-3xl leading-6 font-bold text-gray-900">No ads</h4>
+										<p className="mt-2 text-base leading-6 text-gray-800">
+											We believe that the best things in life are free. Free of advertisements that is. Our app delivers only news, no nerve-racking advertising or pop-ups.
+              							</p>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
 		</div>
 	</div>
 )
