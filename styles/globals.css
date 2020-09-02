@@ -4,3 +4,8 @@
 /* purgecss end ignore */
 
 @tailwind utilities;
+
+/* App CSS */
+.sfd-menu:hover, .sfd-menu.active {
+    color: #D033D3;
+}
