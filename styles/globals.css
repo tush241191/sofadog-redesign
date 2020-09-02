@@ -12,3 +12,6 @@
 .sfd-menu:hover, .sfd-menu.active {
     color: #D033D3;
 }
+.sfd-cover-image{
+    border-radius: 1.5rem;
+}
