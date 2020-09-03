@@ -16,7 +16,7 @@ const Home = () => (
 					<h2 className="sfd-purple-text text-4xl tracking-tight leading-10 font-extrabold sm:text-5xl sm:leading-none md:text-6xl">
 						Meet so.fa.dog's App
 					</h2>
-					<p className="mt-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
+					<p className="mt-3 max-w-md mx-auto text-base text-gray-800 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
 						Hungry for news but short on time? So.Fa.Dog video news app delivers the latest  news when
 						you’re on your way. Our custom made short-form videos cover the hottest and most crucial
 						news without any nerve-racking advertising.
@@ -26,7 +26,7 @@ const Home = () => (
 					</div>
 				</div>
 			</main>
-			<div className="pt-12 bg-white mt-10">
+			<div className="bg-white mt-20">
 				<div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-24">
 					<div className="md:text-center">
 						<h3 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-5xl sm:leading-10">
@@ -57,15 +57,15 @@ const Home = () => (
 					</div>
 				</div>
 			</div>
-			<div className="sfd-no-long-read-section w-full py-12 md:py-0 bg-white mt-4">
+			<div className="sfd-no-long-read-section w-full bg-white mt-4">
 				<div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-10 pt-1">
-					<div className="mt-10">
+					<div className="md:mt-10">
 						<ul className="md:grid md:grid-cols-2 md:col-gap-8 md:row-gap-10">
-							<li className="flex pt-10">
+							<li className="flex md:pt-10">
 								<div className="flex">
 									<div className="ml-2 md:ml-28">
-										<h4 className="text-3xl leading-6 font-bold text-white">No long reads</h4>
-										<p className="mt-2 text-base leading-6 text-white">
+										<h4 className="text-3xl leading-6 font-bold sfd-purple-text md:text-white">No long reads</h4>
+										<p className="mt-2 text-base md:text-lg leading-6 text-gray-800 md:text-white">
 											Your daily dose of exitement through eight categories that cover the whole world – from scientific discoveries and world economy to arts and fashion news. Each story in 10 seconds. 24/7/365. Just swipe and enjoy!
               							</p>
 									</div>
@@ -82,14 +82,14 @@ const Home = () => (
 					</div>
 				</div>
 			</div>
-			<div className="pt-2 bg-white">
+			<div className="pt-5 bg-white">
 				<div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-24">
 					<div className="">
 						<ul className="flex flex-col-reverse md:grid md:grid-cols-2 md:col-gap-8 md:row-gap-10">
 							<li className="mt-4">
 								<div className="flex">
 									<div className="mx-auto">
-										<img className="w-full md:w-3/4" src="/no_fake_news.svg"></img>
+										<img className="w-4/5 mx-auto md:w-3/4" src="/no_fake_news.svg"></img>
 									</div>
 								</div>
 							</li>
@@ -97,7 +97,7 @@ const Home = () => (
 								<div className="flex">
 									<div className="ml-2 md:ml-4">
 										<h4 className="sfd-purple-text text-3xl leading-6 font-bold text-gray-900">No fake news</h4>
-										<p className="mt-2 text-base leading-6 text-gray-800">
+										<p className="mt-2 text-base md:text-lg leading-6 text-gray-800">
 											Each one of our news stories is custom-made and created by a professional video editor and journalist. We do our own fact checking. No AI, no Google Translate, no funny business.
               							</p>
 									</div>
@@ -107,7 +107,7 @@ const Home = () => (
 					</div>
 				</div>
 			</div>
-			<div className="sfd-download-section bg-white mt-28">
+			<div className="sfd-download-section bg-white mt-20">
 				<div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-24">
 					<div className="lg:text-center">
 						<h3 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-5xl sm:leading-10">
@@ -115,23 +115,27 @@ const Home = () => (
       					</h3>
 					</div>
 
-					<div className="mt-10 md:mt-16">
+					<div className="md:mt-16">
 						<ul className="flex flex-col-reverse md:grid md:grid-cols-2 md:col-gap-8 md:row-gap-10">
 							<li className="mt-4">
-								<div className="flex">
-									<div className="flex justify-end">
-										<img className="w-full md:w-8/12" src="/mobile.svg"></img>
+								<div className="grid md:flex">
+									<div className="flex justify-center md:justify-end">
+										<img className="w-3/5 md:w-8/12" src="/mobile.svg"></img>
+									</div>
+									<div className="flex justify-center md:hidden mt-5">
+										<img className="mr-1 w-2/5 cursor-pointer" src="/apple.svg"></img>
+										<img className="ml-1 w-2/5 cursor-pointer" src="/android.svg"></img>
 									</div>
 								</div>
 							</li>
 							<li className="flex">
 								<div className="flex">
-									<div className="mt-16">
+									<div className="mt-10 md:mt-16">
 										<img className="w-36 pl-2" src="/Logo-With-Text.svg"></img>
-										<p className="mt-6 pl-2 pr-12 text-lg leading-6 text-gray-800 lg:text-gray-800 xl:text-white">
+										<p className="mt-6 pl-2 pr-12 text-base md:text-lg leading-6 text-gray-800 lg:text-gray-800 xl:text-white">
 											Creative news templates and custom made videos with engaging audio give your ears and eyes a treat. We are never done improving and hope to offer you something exciting every time you open the So.Fa.Dog app.
               							</p>
-										<div className="flex mt-28">
+										<div className="hidden md:flex mt-28">
 											<img className="mr-1 w-2/5 cursor-pointer" src="/apple.svg"></img>
 											<img className="ml-1 w-2/5 cursor-pointer" src="/android.svg"></img>
 										</div>
@@ -142,19 +146,19 @@ const Home = () => (
 					</div>
 				</div>
 			</div>
-			<div className="relative bg-white mt-20">
+			<div className="relative bg-white mt-10 md:mt-20">
 				<div className="absolute inset-0">
 					<div className="absolute inset-y-0 left-0 w-1/2"></div>
 				</div>
 				<div className="relative max-w-7xl mx-auto lg:grid lg:grid-cols-6">
-					<div className="py-16 px-4 sm:px-6 lg:col-span-2 lg:px-8 lg:py-24 xl:pr-8">
+					<div className="py-4 md:py-16 px-4 sm:px-6 lg:col-span-2 lg:px-8 lg:py-24 xl:pr-8">
 						<div className="max-w-lg mx-auto">
-							<h2 className="sfd-purple-text text-2xl text-right leading-8 font-extrabold tracking-wide text-gray-900 sm:text-5xl sm:leading-10">
+							<h2 className="sfd-purple-text text-2xl text-center md:text-right leading-8 font-extrabold tracking-wide text-gray-900 sm:text-5xl sm:leading-10">
 								Got some feedbark?
         					</h2>
 						</div>
 					</div>
-					<div className="bg-white pt-16 px-4 sm:px-6 lg:col-span-3 lg:pt-24 pb-10 lg:px-8 xl:pl-12">
+					<div className="bg-white md:pt-16 px-4 sm:px-6 lg:col-span-3 lg:pt-24 pb-10 lg:px-8 xl:pl-12">
 						<div className="max-w-lg mx-auto lg:max-w-none">
 							<form action="#" method="POST" className="grid grid-cols-1 row-gap-6">
 								<div>
@@ -183,9 +187,9 @@ const Home = () => (
 										</div>
 									</div>
 								</div>
-								<div className="">
-									<span className="inline-flex rounded-md shadow-sm">
-										<button type="submit" className="sfd-feedback-btn inline-flex justify-center py-2 px-8 border border-transparent text-white text-base leading-6 font-medium rounded-md text-white focus:outline-none transition duration-150 ease-in-out">
+								<div className="w-full">
+									<span className="inline-flex w-full md:w-1/5 rounded-md shadow-sm">
+										<button type="submit" className="sfd-feedback-btn w-full inline-flex justify-center py-2 px-8 border border-transparent text-white text-base leading-6 font-medium rounded-md text-white focus:outline-none transition duration-150 ease-in-out">
 											SEND
               							</button>
 									</span>
@@ -194,52 +198,52 @@ const Home = () => (
 						</div>
 					</div>
 				</div>
-				<div className="text-xl text-center">Your feedback is important to us, please write with any questions or feedback. Thanks for your support!</div>
+				<div className="px-4 md:px-0 text-sm md:text-xl text-center">Your feedback is important to us, please write with any questions or feedback. Thanks for your support!</div>
 			</div>
-			<div className="sfd-footer py-20 relative bg-white mt-20">
-				<div className="mt-4 relative max-w-7xl mx-auto flex">
-					<div className="w-2/5">
-						<div className="flex justify-center ml-20">
+			<div className="sfd-footer md:py-20 relative bg-white mt-20">
+				<div className="mt-4 relative max-w-7xl mx-auto md:flex">
+					<div className="w-full w-2/5">
+						<div className="flex justify-center mb-4 md:mb-0 md:ml-20">
 							<a href="#" className="text-gray-400 hover:text-gray-500">
-								<span className="sr-only">Facebook</span>
-								<img className="w-10" src="/facebook.svg"></img>
+								<img className="hidden md:block w-10" src="/facebook.svg"></img>
+								<img className="md:hidden w-10" src="/facebook-m.svg"></img>
 							</a>
 							<a href="#" className="ml-3 text-gray-400 hover:text-gray-500">
-								<span className="sr-only">Instagram</span>
-								<img className="w-10" src="/twitter.svg"></img>
+								<img className="hidden md:block w-10" src="/twitter.svg"></img>
+								<img className="md:hidden w-10" src="/twitter-m.svg"></img>
 							</a>
 							<a href="#" className="ml-3 text-gray-400 hover:text-gray-500">
-								<span className="sr-only">Twitter</span>
-								<img className="w-10" src="/youtube.svg"></img>
+								<img className="hidden md:block w-10" src="/youtube.svg"></img>
+								<img className="md:hidden w-10" src="/youtube-m.svg"></img>
 							</a>
 							<a href="#" className="ml-3 text-gray-400 hover:text-gray-500">
-								<span className="sr-only">GitHub</span>
-								<img className="w-10" src="/linkedin.svg"></img>
+								<img className="hidden md:block w-10" src="/linkedin.svg"></img>
+								<img className="md:hidden w-10" src="/linkedin-m.svg"></img>
 							</a>
 							<a href="#" className="ml-3 text-gray-400 hover:text-gray-500">
-								<span className="sr-only">Dribbble</span>
-								<img className="w-10" src="/instagram.svg"></img>
+								<img className="hidden md:block w-10" src="/instagram.svg"></img>
+								<img className="md:hidden w-10" src="/instagram-m.svg"></img>
 							</a>
 							<a href="#" className="ml-3 text-gray-400 hover:text-gray-500">
-								<span className="sr-only">Dribbble</span>
-								<img className="w-10" src="/tiktok.svg"></img>
+								<img className="hidden md:block w-10" src="/tiktok.svg"></img>
+								<img className="md:hidden w-10" src="/tiktok-m.svg"></img>
 							</a>
 						</div>
 					</div>
-					<div className="w-3/5 flex items-center">
-						<nav className="ml-24 -mx-5 -my-2 flex flex-wrap items-center justify-center">
+					<div className="w-full w-3/5 flex items-center">
+						<nav className="-mx-5 -my-2 flex flex-wrap items-center justify-center">
 							<div className="px-5 py-2">
-								<a href="#" className="text-base leading-6 text-white">
+								<a href="#" className="text-base leading-6 text-gray-800 md:text-white">
 									Terms and Conditions
         						</a>
 							</div>
 							<div className="px-5 py-2">
-								<a href="#" className="text-base leading-6 text-white">
+								<a href="#" className="text-base leading-6 text-gray-800 md:text-white">
 									Privacy Policy
         						</a>
 							</div>
 							<div className="px-5 py-2">
-								<a href="#" className="text-base leading-6 text-white">
+								<a href="#" className="text-base leading-6 text-gray-800 md:text-white">
 									2020 Copyright
         						</a>
 							</div>

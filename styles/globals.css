@@ -19,20 +19,6 @@
     border-radius: 1.5rem;
 }
 
-.sfd-no-long-read-section {
-    background: url('/gradient_line_l_to_r.png');
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-position: bottom;
-}
-
-.sfd-download-section {
-    background: url('/gradient_line_r_to_l.png');
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    background-position: bottom;
-}
-
 .sfd-form-input {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -62,18 +48,34 @@
     background-color: #B82DEF;
 }
 
-.sfd-footer {
-    background: url('/gradient_line_footer.png');
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-}
+
 
 /* Responsive */
 /* Small (sm) */
 @media (min-width: 640px) { /* ... */ }
 
 /* Medium (md) */
-@media (min-width: 768px) { /* ... */ }
+@media (min-width: 768px) {
+    .sfd-no-long-read-section {
+        background: url('/gradient_line_l_to_r.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
+
+    .sfd-download-section {
+        background: url('/gradient_line_r_to_l.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
+
+    .sfd-footer {
+        background: url('/gradient_line_footer.png');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+}
 
 /* Large (lg) */
 @media (min-width: 1024px) {
