@@ -1,17 +1,63 @@
 /* purgecss start ignore */
-@tailwind  base;
-@tailwind  components;
+
+@tailwind base;
+@tailwind components;
 /* purgecss end ignore */
 
 @tailwind utilities;
-
 /* App CSS */
-.sfd-purple-text{
+
+.sfd-purple-text {
     color: #790ABF;
 }
+
 .sfd-menu:hover, .sfd-menu.active {
     color: #D033D3;
 }
-.sfd-cover-image{
+
+.sfd-cover-image {
     border-radius: 1.5rem;
+}
+
+.sfd-no-long-read-section {
+    background: url('/gradient_line_l_to_r.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 0.5rem;
+}
+
+.sfd-download-section {
+    background: url('/gradient_line_r_to_l.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.sfd-form-input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #ffffff;
+    border-color: #790ABF;
+    border-width: 2px;
+    border-radius: 0.375rem;
+    padding-top: 0.5rem;
+    padding-right: 0.75rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.sfd-form-input:focus {
+    outline: 2px #aa1cb8
+}
+
+.sfd-feedback-btn{
+    background-image: linear-gradient(to right, #E438BE , #B82DEF);
+    background-color: #B82DEF;
+}
+.sfd-feedback-btn:hover{
+    background-image: linear-gradient(to left, #E438BE , #B82DEF);
+    background-color: #B82DEF;
 }
