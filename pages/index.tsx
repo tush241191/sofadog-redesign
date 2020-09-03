@@ -154,7 +154,7 @@ const Home = () => (
         					</h2>
 						</div>
 					</div>
-					<div className="bg-white py-16 px-4 sm:px-6 lg:col-span-3 lg:py-24 lg:px-8 xl:pl-12">
+					<div className="bg-white pt-16 px-4 sm:px-6 lg:col-span-3 lg:pt-24 pb-10 lg:px-8 xl:pl-12">
 						<div className="max-w-lg mx-auto lg:max-w-none">
 							<form action="#" method="POST" className="grid grid-cols-1 row-gap-6">
 								<div>
@@ -192,6 +192,59 @@ const Home = () => (
 								</div>
 							</form>
 						</div>
+					</div>
+				</div>
+				<div className="text-xl text-center">Your feedback is important to us, please write with any questions or feedback. Thanks for your support!</div>
+			</div>
+			<div className="sfd-footer py-20 relative bg-white mt-20">
+				<div className="mt-4 relative max-w-7xl mx-auto flex">
+					<div className="w-2/5">
+						<div className="flex justify-center ml-20">
+							<a href="#" className="text-gray-400 hover:text-gray-500">
+								<span className="sr-only">Facebook</span>
+								<img className="w-10" src="/facebook.svg"></img>
+							</a>
+							<a href="#" className="ml-3 text-gray-400 hover:text-gray-500">
+								<span className="sr-only">Instagram</span>
+								<img className="w-10" src="/twitter.svg"></img>
+							</a>
+							<a href="#" className="ml-3 text-gray-400 hover:text-gray-500">
+								<span className="sr-only">Twitter</span>
+								<img className="w-10" src="/youtube.svg"></img>
+							</a>
+							<a href="#" className="ml-3 text-gray-400 hover:text-gray-500">
+								<span className="sr-only">GitHub</span>
+								<img className="w-10" src="/linkedin.svg"></img>
+							</a>
+							<a href="#" className="ml-3 text-gray-400 hover:text-gray-500">
+								<span className="sr-only">Dribbble</span>
+								<img className="w-10" src="/instagram.svg"></img>
+							</a>
+							<a href="#" className="ml-3 text-gray-400 hover:text-gray-500">
+								<span className="sr-only">Dribbble</span>
+								<img className="w-10" src="/tiktok.svg"></img>
+							</a>
+						</div>
+					</div>
+					<div className="w-3/5 flex items-center">
+						<nav className="ml-24 -mx-5 -my-2 flex flex-wrap items-center justify-center">
+							<div className="px-5 py-2">
+								<a href="#" className="text-base leading-6 text-white">
+									Terms and Conditions
+        						</a>
+							</div>
+							<div className="px-5 py-2">
+								<a href="#" className="text-base leading-6 text-white">
+									Privacy Policy
+        						</a>
+							</div>
+							<div className="px-5 py-2">
+								<a href="#" className="text-base leading-6 text-white">
+									2020 Copyright
+        						</a>
+							</div>
+						</nav>
+
 					</div>
 				</div>
 			</div>

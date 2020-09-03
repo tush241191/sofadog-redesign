@@ -61,3 +61,9 @@
     background-image: linear-gradient(to left, #E438BE , #B82DEF);
     background-color: #B82DEF;
 }
+
+.sfd-footer {
+    background: url('/gradient_line_l_to_r.png');
+    background-size: inherit;
+    background-repeat: no-repeat;
+}
