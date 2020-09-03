@@ -21,14 +21,14 @@
 
 .sfd-no-long-read-section {
     background: url('/gradient_line_l_to_r.png');
-    background-size: cover;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-position-y: 0.5rem;
+    background-position: bottom;
 }
 
 .sfd-download-section {
     background: url('/gradient_line_r_to_l.png');
-    background-size: contain;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: bottom;
 }
@@ -63,7 +63,28 @@
 }
 
 .sfd-footer {
-    background: url('/gradient_line_l_to_r.png');
-    background-size: inherit;
+    background: url('/gradient_line_footer.png');
+    background-size: 100% 100%;
     background-repeat: no-repeat;
+}
+
+/* Responsive */
+/* Small (sm) */
+@media (min-width: 640px) { /* ... */ }
+
+/* Medium (md) */
+@media (min-width: 768px) { /* ... */ }
+
+/* Large (lg) */
+@media (min-width: 1024px) {
+    .sfd-download-section {
+        background-size: 100% 50%;    
+    }
+}
+
+/* Extra Large (xl) */
+@media (min-width: 1280px) {
+    .sfd-download-section {
+        background-size: 100% 70%;    
+    }
 }

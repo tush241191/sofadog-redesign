@@ -28,7 +28,7 @@ const Home = () => (
 			</main>
 			<div className="pt-12 bg-white mt-10">
 				<div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-24">
-					<div className="lg:text-center">
+					<div className="md:text-center">
 						<h3 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-5xl sm:leading-10">
 							What’s so special about us?
       					</h3>
@@ -57,7 +57,7 @@ const Home = () => (
 					</div>
 				</div>
 			</div>
-			<div className="sfd-no-long-read-section w-full py-12 md:py-0 bg-white md:h-68">
+			<div className="sfd-no-long-read-section w-full py-12 md:py-0 bg-white mt-4">
 				<div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-10 pt-1">
 					<div className="mt-10">
 						<ul className="md:grid md:grid-cols-2 md:col-gap-8 md:row-gap-10">
@@ -107,7 +107,7 @@ const Home = () => (
 					</div>
 				</div>
 			</div>
-			<div className="sfd-download-section py-12 bg-white mt-28">
+			<div className="sfd-download-section bg-white mt-28">
 				<div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-24">
 					<div className="lg:text-center">
 						<h3 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-5xl sm:leading-10">
@@ -128,7 +128,7 @@ const Home = () => (
 								<div className="flex">
 									<div className="mt-16">
 										<img className="w-36 pl-2" src="/Logo-With-Text.svg"></img>
-										<p className="mt-6 pl-2 pr-12 text-lg leading-6 text-gray-800">
+										<p className="mt-6 pl-2 pr-12 text-lg leading-6 text-gray-800 lg:text-gray-800 xl:text-white">
 											Creative news templates and custom made videos with engaging audio give your ears and eyes a treat. We are never done improving and hope to offer you something exciting every time you open the So.Fa.Dog app.
               							</p>
 										<div className="flex mt-28">
