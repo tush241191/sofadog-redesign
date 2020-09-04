@@ -7,8 +7,26 @@
 @tailwind utilities;
 /* App CSS */
 
+@font-face {
+    font-family: 'roboto-regular';
+    src: url(./Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'roboto-bold';
+    src: url(./Roboto/Roboto-Bold.ttf);
+}
+
 .sfd-purple-text {
     color: #790ABF;
+}
+
+.sfd-font-regular{
+    font-family: 'roboto-regular';
+}
+
+.sfd-font-bold{
+    font-family: 'roboto-bold';
 }
 
 .sfd-menu:hover, .sfd-menu.active {
@@ -39,22 +57,26 @@
     outline: 2px #aa1cb8
 }
 
-.sfd-feedback-btn{
-    background-image: linear-gradient(to right, #E438BE , #B82DEF);
-    background-color: #B82DEF;
-}
-.sfd-feedback-btn:hover{
-    background-image: linear-gradient(to left, #E438BE , #B82DEF);
+.sfd-feedback-btn {
+    background-image: linear-gradient(to right, #E438BE, #B82DEF);
     background-color: #B82DEF;
 }
 
-
+.sfd-feedback-btn:hover {
+    background-image: linear-gradient(to left, #E438BE, #B82DEF);
+    background-color: #B82DEF;
+}
 
 /* Responsive */
+
 /* Small (sm) */
-@media (min-width: 640px) { /* ... */ }
+
+@media (min-width: 640px) {
+    /* ... */
+}
 
 /* Medium (md) */
+
 @media (min-width: 768px) {
     .sfd-no-long-read-section {
         background: url('/gradient_line_l_to_r_large@2x.png');
@@ -62,14 +84,12 @@
         background-repeat: no-repeat;
         background-position: bottom;
     }
-
     .sfd-download-section {
         background: url('/gradient_line_r_to_l_large.png');
         background-size: 100% 100%;
         background-repeat: no-repeat;
         background-position: bottom;
     }
-
     .sfd-footer {
         background: url('/gradient_line_footer.png');
         background-size: 100% 100%;
@@ -78,15 +98,17 @@
 }
 
 /* Large (lg) */
+
 @media (min-width: 1024px) {
     .sfd-download-section {
-        background-size: 100% 50%;    
+        background-size: 100% 50%;
     }
 }
 
 /* Extra Large (xl) */
+
 @media (min-width: 1280px) {
     .sfd-download-section {
-        background-size: 100% 70%;    
+        background-size: 100% 70%;
     }
 }

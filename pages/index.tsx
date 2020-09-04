@@ -13,10 +13,10 @@ const Home = () => (
 			<Header />
 			<main className="mt-2 mx-auto max-w-screen-xl px-4 sm:mt-2 sm:px-6 md:mt-4 lg:mt-6 xl:mt-8">
 				<div className="text-center">
-					<h2 className="sfd-purple-text text-4xl tracking-tight leading-10 font-extrabold sm:text-5xl sm:leading-none md:text-6xl">
+					<h2 className="sfd-purple-text sfd-font-bold text-4xl tracking-tight leading-10 sm:text-5xl sm:leading-none md:text-6xl">
 						Meet so.fa.dog's App
 					</h2>
-					<p className="mt-3 max-w-md mx-auto text-base text-gray-800 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
+					<p className="sfd-font-regular mt-3 max-w-md mx-auto text-base text-gray-800 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
 						Hungry for news but short on time? So.Fa.Dog video news app delivers the latest  news when
 						you’re on your way. Our custom made short-form videos cover the hottest and most crucial
 						news without any nerve-racking advertising.
@@ -29,7 +29,7 @@ const Home = () => (
 			<div className="bg-white mt-20">
 				<div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-24">
 					<div className="md:text-center">
-						<h3 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-5xl sm:leading-10">
+						<h3 className="sfd-font-bold mt-2 text-3xl leading-8 tracking-tight text-gray-900 sm:text-5xl sm:leading-10">
 							What’s so special about us?
       					</h3>
 					</div>
@@ -46,8 +46,8 @@ const Home = () => (
 							<li className="flex items-center">
 								<div className="flex">
 									<div className="ml-2 md:ml-4">
-										<h4 className="sfd-purple-text text-3xl leading-6 font-bold text-gray-900">No ads</h4>
-										<p className="mt-2 text-base leading-6 text-gray-800">
+										<h4 className="sfd-purple-text sfd-font-bold text-3xl leading-6 text-gray-900">No ads</h4>
+										<p className="sfd-font-regular mt-2 text-base leading-6 text-gray-800">
 											We believe that the best things in life are free. Free of advertisements that is. Our app delivers only news, no nerve-racking advertising or pop-ups.
               							</p>
 									</div>
@@ -64,8 +64,8 @@ const Home = () => (
 							<li className="flex md:pt-14">
 								<div className="flex">
 									<div className="ml-2 md:ml-28">
-										<h4 className="text-3xl leading-6 font-bold sfd-purple-text md:text-white">No long reads</h4>
-										<p className="mt-2 text-base md:text-lg leading-6 text-gray-800 md:text-white">
+										<h4 className="sfd-font-bold text-3xl leading-6 sfd-purple-text md:text-white">No long reads</h4>
+										<p className="sfd-font-regular mt-2 text-base md:text-lg leading-6 text-gray-800 md:text-white">
 											Your daily dose of exitement through eight categories that cover the whole world – from scientific discoveries and world economy to arts and fashion news. Each story in 10 seconds. 24/7/365. Just swipe and enjoy!
               							</p>
 									</div>
@@ -97,8 +97,8 @@ const Home = () => (
 							<li className="flex items-center">
 								<div className="flex">
 									<div className="ml-2 md:ml-4">
-										<h4 className="sfd-purple-text text-3xl leading-6 font-bold text-gray-900">No fake news</h4>
-										<p className="mt-2 text-base md:text-lg leading-6 text-gray-800">
+										<h4 className="sfd-purple-text sfd-font-bold text-3xl leading-6 text-gray-900">No fake news</h4>
+										<p className="sfd-font-regular mt-2 text-base md:text-lg leading-6 text-gray-800">
 											Each one of our news stories is custom-made and created by a professional video editor and journalist. We do our own fact checking. No AI, no Google Translate, no funny business.
               							</p>
 									</div>
@@ -111,7 +111,7 @@ const Home = () => (
 			<div className="sfd-download-section bg-white mt-48">
 				<div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-24">
 					<div className="lg:text-center">
-						<h3 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-5xl sm:leading-10">
+						<h3 className="sfd-font-bold mt-2 text-3xl leading-8 tracking-tight text-gray-900 sm:text-5xl sm:leading-10">
 							Download the app and get swiping!
       					</h3>
 					</div>
@@ -139,7 +139,7 @@ const Home = () => (
 								<div className="flex">
 									<div className="mt-8">
 										<img className="w-36 pl-2" src="/Logo-With-Text.svg"></img>
-										<p className="mt-5 pl-2 pr-12 text-base md:text-lg leading-6 text-gray-800 lg:text-gray-800">
+										<p className="sfd-font-regular mt-5 pl-2 pr-12 text-base md:text-lg leading-6 text-gray-800 lg:text-gray-800">
 											Creative news templates and custom made videos with engaging audio give your ears and eyes a treat. We are never done improving and hope to offer you something exciting every time you open the So.Fa.Dog app.
               							</p>
 										<div className="hidden md:flex mt-28">
@@ -160,7 +160,7 @@ const Home = () => (
 				<div className="relative max-w-7xl mx-auto lg:grid lg:grid-cols-6">
 					<div className="py-4 md:py-16 px-4 sm:px-6 lg:col-span-2 lg:px-8 lg:py-24 xl:pr-8">
 						<div className="max-w-lg mx-auto">
-							<h2 className="sfd-purple-text text-2xl text-center md:text-right leading-8 font-extrabold tracking-wide text-gray-900 sm:text-5xl sm:leading-10">
+							<h2 className="sfd-purple-text sfd-font-bold text-2xl text-center md:text-right leading-8 tracking-wide text-gray-900 sm:text-5xl sm:leading-10">
 								Got some feedbark?
         					</h2>
 						</div>
@@ -169,34 +169,34 @@ const Home = () => (
 						<div className="max-w-lg mx-auto lg:max-w-none">
 							<form action="#" method="POST" className="grid grid-cols-1 row-gap-6">
 								<div>
-									<label htmlFor="message" className="sr-only">Message</label>
+									<label htmlFor="message" className="sfd-font-regular sr-only">Message</label>
 									<div className="relative rounded-md shadow-sm">
-										<textarea id="message" rows={4} className="sfd-form-input block w-full py-3 px-4 placeholder-gray-500 transition ease-in-out duration-150" placeholder="Message"></textarea>
+										<textarea id="message" rows={4} className="sfd-form-input sfd-font-regular block w-full py-3 px-4 placeholder-gray-500 transition ease-in-out duration-150" placeholder="Message"></textarea>
 									</div>
 								</div>
 								<div>
-									<label htmlFor="email" className="sr-only">Email</label>
+									<label htmlFor="email" className="sr-only sfd-font-regular">Email</label>
 									<div className="relative rounded-md shadow-sm">
-										<input id="email" type="email" className="sfd-form-input block w-full py-3 px-4 placeholder-gray-500 transition ease-in-out duration-150" placeholder="Email" />
+										<input id="email" type="email" className="sfd-form-input sfd-font-regular block w-full py-3 px-4 placeholder-gray-500 transition ease-in-out duration-150" placeholder="Email" />
 									</div>
 								</div>
 								<div className="flex">
 									<div className="w-1/2 mr-4">
-										<label htmlFor="full_name" className="sr-only">Full name</label>
+										<label htmlFor="full_name" className="sr-only sfd-font-regular">Full name</label>
 										<div className="relative rounded-md shadow-sm">
-											<input id="full_name" className="sfd-form-input block w-full py-3 px-4 placeholder-gray-500 transition ease-in-out duration-150" placeholder="Full name" />
+											<input id="full_name" className="sfd-form-input sfd-font-regular block w-full py-3 px-4 placeholder-gray-500 transition ease-in-out duration-150" placeholder="Full name" />
 										</div>
 									</div>
 									<div className="w-1/2 ml-4">
-										<label htmlFor="full_name" className="sr-only">Full name</label>
+										<label htmlFor="full_name" className="sr-only sfd-font-regular">Full name</label>
 										<div className="relative rounded-md shadow-sm">
-											<input id="full_name" className="sfd-form-input block w-full py-3 px-4 placeholder-gray-500 transition ease-in-out duration-150" placeholder="Full name" />
+											<input id="full_name" className="sfd-form-input sfd-font-regular block w-full py-3 px-4 placeholder-gray-500 transition ease-in-out duration-150" placeholder="Full name" />
 										</div>
 									</div>
 								</div>
 								<div className="w-full mt-10">
 									<span className="inline-flex w-full md:w-1/5 rounded-md shadow-sm">
-										<button type="submit" className="sfd-feedback-btn w-full inline-flex justify-center py-2 px-8 border border-transparent text-white text-base leading-6 font-medium rounded-md text-white focus:outline-none transition duration-150 ease-in-out">
+										<button type="submit" className="sfd-feedback-btn sfd-font-regular w-full inline-flex justify-center py-2 px-8 border border-transparent text-white text-base leading-6 font-medium rounded-md text-white focus:outline-none transition duration-150 ease-in-out">
 											SEND
               							</button>
 									</span>
@@ -205,10 +205,10 @@ const Home = () => (
 						</div>
 					</div>
 				</div>
-				<div className="mt-6 px-4 md:px-0 text-sm md:text-xl text-center">Your feedback is important to us, please write with any questions or feedback. Thanks for your support!</div>
+				<div className="sfd-font-regular mt-6 px-4 md:px-0 text-sm md:text-xl text-center">Your feedback is important to us, please write with any questions or feedback. Thanks for your support!</div>
 			</div>
-			<div className="sfd-footer md:py-20 relative bg-white mt-20">
-				<div className="mt-4 relative max-w-7xl mx-auto md:flex">
+			<div className="sfd-footer md:py-10 relative bg-white mt-20">
+				<div className="mt-6 relative max-w-7xl mx-auto md:flex pt-12">
 					<div className="w-full w-2/5">
 						<div className="flex justify-center mb-4 md:mb-0 md:ml-20">
 							<a href="#" className="text-gray-400 hover:text-gray-500">
@@ -240,17 +240,17 @@ const Home = () => (
 					<div className="w-full w-3/5 flex items-center justify-center">
 						<nav className="-mx-5 -my-2 flex flex-wrap items-center justify-center">
 							<div className="px-5 py-2">
-								<a href="#" className="text-base leading-6 text-gray-800 md:text-white">
+								<a href="#" className="sfd-font-regular text-base leading-6 text-gray-800 md:text-white">
 									Terms and Conditions
         						</a>
 							</div>
 							<div className="px-5 py-2">
-								<a href="#" className="text-base leading-6 text-gray-800 md:text-white">
+								<a href="#" className="sfd-font-regular text-base leading-6 text-gray-800 md:text-white">
 									Privacy Policy
         						</a>
 							</div>
 							<div className="px-5 py-2">
-								<a href="#" className="text-base leading-6 text-gray-800 md:text-white">
+								<a href="#" className="sfd-font-regular text-base leading-6 text-gray-800 md:text-white">
 									2020 Copyright
         						</a>
 							</div>
