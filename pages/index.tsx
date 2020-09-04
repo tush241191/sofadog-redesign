@@ -3,7 +3,7 @@ import Head from 'next/head';
 
 import Header from './_components/_layouts/Header';
 const Home = () => (
-	<div>
+	<div className="bg-white">
 		<Head>
 			<title>So.Fa.Dog</title>
 			<link rel="icon" href="/color-logo.ico" />
@@ -39,7 +39,7 @@ const Home = () => (
 							<li className="mt-4">
 								<div className="flex">
 									<div className="mx-auto">
-										<img className="w-full md:w-3/4" src="/no_ads.svg"></img>
+										<img className="w-full sm:mx-auto sm:w-8/12 md:w-3/4" src="/no_ads.svg"></img>
 									</div>
 								</div>
 							</li>
@@ -74,7 +74,7 @@ const Home = () => (
 							<li className="mt-7">
 								<div className="flex">
 									<div className="mx-auto flex md:justify-end">
-										<img className="w-full md:w-3/4" src="/barber.svg"></img>
+										<img className="w-full sm:mx-auto sm:w-8/12 md:w-3/4" src="/barber.svg"></img>
 									</div>
 								</div>
 							</li>
@@ -89,7 +89,7 @@ const Home = () => (
 							<li className="mt-4">
 								<div className="flex">
 									<div className="mx-auto">
-										<img className="w-4/5 mx-auto md:w-3/4" src="/no_fake_news.svg"></img>
+										<img className="w-4/5 mx-auto sm:w-8/12 md:w-3/4" src="/no_fake_news.svg"></img>
 									</div>
 								</div>
 							</li>
@@ -120,12 +120,17 @@ const Home = () => (
 							<li className="mt-4">
 								<div className="grid md:flex">
 									<div className="flex justify-center md:justify-end">
-										<img className="w-3/5 md:w-8/12" src="/mobile.svg"></img>
+										<img className="w-3/5 sm:w-3/5 md:w-8/12" src="/mobile.svg"></img>
+										<div className="sm:flex justify-center hidden md:hidden ml-5">
+											<img className="mr-1 w-28 cursor-pointer" src="/apple.svg"></img>
+											<img className="ml-1 w-28 cursor-pointer" src="/android.svg"></img>
+										</div>
 									</div>
-									<div className="flex justify-center md:hidden mt-5">
+									<div className="flex justify-center sm:hidden md:hidden mt-5">
 										<img className="mr-1 w-2/5 cursor-pointer" src="/apple.svg"></img>
 										<img className="ml-1 w-2/5 cursor-pointer" src="/android.svg"></img>
 									</div>
+
 								</div>
 							</li>
 							<li className="flex">
@@ -230,7 +235,7 @@ const Home = () => (
 							</a>
 						</div>
 					</div>
-					<div className="w-full w-3/5 flex items-center">
+					<div className="w-full w-3/5 flex items-center justify-center">
 						<nav className="-mx-5 -my-2 flex flex-wrap items-center justify-center">
 							<div className="px-5 py-2">
 								<a href="#" className="text-base leading-6 text-gray-800 md:text-white">
