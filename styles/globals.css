@@ -9,24 +9,32 @@
 
 @font-face {
     font-family: 'roboto-regular';
-    src: url(./Roboto/Roboto-Regular.ttf);
+    src: url(./fonts/Roboto-Regular.ttf);
 }
 
 @font-face {
     font-family: 'roboto-bold';
-    src: url(./Roboto/Roboto-Bold.ttf);
+    src: url(./fonts/Roboto-Bold.ttf);
+}
+@font-face {
+    font-family: 'Comfortaa-Bold';
+    src: url(./fonts/Comfortaa-VariableFont_wght.ttf) format('truetype');
 }
 
 .sfd-purple-text {
     color: #790ABF;
 }
 
-.sfd-font-regular{
+.sfd-font-regular {
     font-family: 'roboto-regular';
 }
 
-.sfd-font-bold{
+.sfd-font-bold {
     font-family: 'roboto-bold';
+}
+
+.sfd-font-comfortaa-bold{
+    font-family: 'Comfortaa-Bold';
 }
 
 .sfd-menu:hover, .sfd-menu.active {
@@ -35,6 +43,11 @@
 
 .sfd-cover-image {
     border-radius: 1.5rem;
+}
+
+.sfd-slogan-text{
+    bottom: 15%;
+    left: 10%;
 }
 
 .sfd-form-input {
@@ -95,6 +108,10 @@
         background-size: 100% 100%;
         background-repeat: no-repeat;
     }
+    .sfd-slogan-text{
+        bottom: 15%;
+        left: 10%;
+    }
 }
 
 /* Large (lg) */
@@ -102,6 +119,10 @@
 @media (min-width: 1024px) {
     .sfd-download-section {
         background-size: 100% 50%;
+    }
+    .sfd-slogan-text{
+        bottom: 15%;
+        left: 10%;
     }
 }
 

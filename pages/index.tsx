@@ -21,9 +21,13 @@ const Home = () => (
 							Hungry for news but short on time? So.Fa.Dog video news app delivers the latest  news when
 							you’re on your way. Our custom made short-form videos cover the hottest and most crucial
 							news without any nerve-racking advertising.
-        			</p>
-						<div className="mt-5 mx-auto sm:block sm:justify-center md:mt-8">
-							<img className="w-full md:w-4/5 mx-auto sfd-cover-image" src="/re_Landing page cover.png"></img>
+        				</p>
+						<div className="w-full md:w-11/12 mt-5 mx-auto sm:block sm:justify-center md:mt-8 relative">
+							<img className="w-full mx-auto sfd-cover-image" src="/re_Landing page cover.png"></img>
+							<div className="grid leading-tight sfd-font-comfortaa-bold sfd-slogan-text text-base md:text-3xl lg:text-4xl xl:text-5xl text-black absolute">
+								<span className="text-left">10 second video news</span>
+								<span className="text-left">on your phone</span>
+							</div>
 						</div>
 					</div>
 				</main>
