@@ -10,11 +10,11 @@ const Header = () => {
     return (
         <nav className="bg-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex justify-between h-16">
+                <div className="flex justify-between h-28">
                     <div className="flex w-full">
                         <div className="w-1/5 flex-shrink-0 flex items-center">
-                            <img className="block lg:hidden h-8 w-auto" src="/Logo-Without-Text.svg" alt="Workflow logo" />
-                            <img className="hidden lg:block h-8 w-auto" src="/Logo-With-Text.svg" alt="Workflow logo" />
+                            <img className="block lg:hidden h-12 w-auto" src="/color-logo.png" alt="So.Fa.Dog" />
+                            <img className="hidden lg:block h-16 w-auto" src="/color-logo-with-text.png" alt="So.Fa.Dog" />
                         </div>
                         <div className="w-4/5 hidden justify-end sm:ml-6 sm:flex">
                             <a href="#" className="sfd-menu sfd-font-regular active inline-flex items-center px-1 pt-1 text-base font-medium leading-5 text-gray-900 focus:outline-none transition duration-150 ease-in-out">

@@ -143,10 +143,10 @@ const Home = () => (
 								<li className="flex">
 									<div className="flex">
 										<div className="mt-6">
-											<img className="w-36 pl-2" src="/Logo-With-Text.svg"></img>
+											<img className="w-36 pl-2" src="/color-logo-with-text.png" alt="So.Fa.Dog"></img>
 											<p className="sfd-font-regular mt-5 pl-2 pr-12 text-base md:text-lg leading-6 text-gray-800 lg:text-gray-800">
 												Creative news templates and custom made videos with engaging audio give your ears and eyes a treat. We are never done improving and hope to offer you something exciting every time you open the So.Fa.Dog app.
-                            </p>
+                            				</p>
 											<div className="hidden md:flex mt-28">
 												<img className="mr-1 w-2/5 cursor-pointer" src="/apple.svg"></img>
 												<img className="ml-1 w-2/5 cursor-pointer" src="/android.svg"></img>
