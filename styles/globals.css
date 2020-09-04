@@ -57,7 +57,7 @@
 /* Medium (md) */
 @media (min-width: 768px) {
     .sfd-no-long-read-section {
-        background: url('/gradient_line_l_to_r.png');
+        background: url('/gradient_line_l_to_r_large@2x.png');
         background-size: 100% 100%;
         background-repeat: no-repeat;
         background-position: bottom;

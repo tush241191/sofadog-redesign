@@ -57,11 +57,11 @@ const Home = () => (
 					</div>
 				</div>
 			</div>
-			<div className="sfd-no-long-read-section w-full bg-white mt-4">
+			<div className="sfd-no-long-read-section w-full bg-white">
 				<div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-10 pt-1">
 					<div className="md:mt-10">
 						<ul className="md:grid md:grid-cols-2 md:col-gap-8 md:row-gap-10">
-							<li className="flex md:pt-10">
+							<li className="flex md:pt-14">
 								<div className="flex">
 									<div className="ml-2 md:ml-28">
 										<h4 className="text-3xl leading-6 font-bold sfd-purple-text md:text-white">No long reads</h4>
@@ -73,8 +73,9 @@ const Home = () => (
 							</li>
 							<li className="mt-7">
 								<div className="flex">
-									<div className="mx-auto flex md:justify-end">
-										<img className="w-full sm:mx-auto sm:w-8/12 md:w-3/4" src="/barber.png"></img>
+									<div className="mx-auto flex justify-center md:justify-end">
+										<img className="sm:hidden" src="/barber.png"></img>
+										<img className="hidden sm:block sm:mx-auto sm:w-3/4" src="/barber@2x.png"></img>
 									</div>
 								</div>
 							</li>
@@ -120,7 +121,8 @@ const Home = () => (
 							<li className="mt-4">
 								<div className="grid md:flex">
 									<div className="flex justify-center md:justify-end">
-										<img className="w-3/5 sm:w-3/5 md:w-8/12" src="/mobile.png"></img>
+										<img className="sfd-mobile-img sm:hidden" src="/mobile.png"></img>
+										<img className="w-full hidden sm:block sm:w-3/5 md:w-8/12" src="/mobile@2x.png"></img>
 										<div className="sm:flex justify-center hidden md:hidden ml-5">
 											<img className="mr-1 w-28 cursor-pointer" src="/apple.svg"></img>
 											<img className="ml-1 w-28 cursor-pointer" src="/android.svg"></img>
@@ -135,9 +137,9 @@ const Home = () => (
 							</li>
 							<li className="flex">
 								<div className="flex">
-									<div className="mt-10 md:mt-16">
+									<div className="mt-8">
 										<img className="w-36 pl-2" src="/Logo-With-Text.svg"></img>
-										<p className="mt-6 pl-2 pr-12 text-base md:text-lg leading-6 text-gray-800 lg:text-gray-800">
+										<p className="mt-5 pl-2 pr-12 text-base md:text-lg leading-6 text-gray-800 lg:text-gray-800">
 											Creative news templates and custom made videos with engaging audio give your ears and eyes a treat. We are never done improving and hope to offer you something exciting every time you open the So.Fa.Dog app.
               							</p>
 										<div className="hidden md:flex mt-28">
