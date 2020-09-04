@@ -192,7 +192,7 @@ const Home = () => (
 										</div>
 									</div>
 								</div>
-								<div className="w-full">
+								<div className="w-full mt-10">
 									<span className="inline-flex w-full md:w-1/5 rounded-md shadow-sm">
 										<button type="submit" className="sfd-feedback-btn w-full inline-flex justify-center py-2 px-8 border border-transparent text-white text-base leading-6 font-medium rounded-md text-white focus:outline-none transition duration-150 ease-in-out">
 											SEND
@@ -203,7 +203,7 @@ const Home = () => (
 						</div>
 					</div>
 				</div>
-				<div className="px-4 md:px-0 text-sm md:text-xl text-center">Your feedback is important to us, please write with any questions or feedback. Thanks for your support!</div>
+				<div className="mt-6 px-4 md:px-0 text-sm md:text-xl text-center">Your feedback is important to us, please write with any questions or feedback. Thanks for your support!</div>
 			</div>
 			<div className="sfd-footer md:py-20 relative bg-white mt-20">
 				<div className="mt-4 relative max-w-7xl mx-auto md:flex">
