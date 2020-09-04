@@ -107,7 +107,7 @@ const Home = () => (
 					</div>
 				</div>
 			</div>
-			<div className="sfd-download-section bg-white mt-20">
+			<div className="sfd-download-section bg-white mt-48">
 				<div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-24">
 					<div className="lg:text-center">
 						<h3 className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-5xl sm:leading-10">
@@ -151,7 +151,7 @@ const Home = () => (
 					</div>
 				</div>
 			</div>
-			<div className="relative bg-white mt-10 md:mt-20">
+			<div className="relative bg-white mt-10 md:mt-32">
 				<div className="absolute inset-0">
 					<div className="absolute inset-y-0 left-0 w-1/2"></div>
 				</div>
