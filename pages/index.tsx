@@ -205,6 +205,58 @@ const Home = () => (
 					</div>
 					<div className="sfd-font-regular mt-6 px-4 md:px-0 text-sm md:text-xl text-center">Your feedback is important to us, please write with any questions or feedback. Thanks for your support!</div>
 				</div>
+				<div className="sfd-footer md:py-10 mt-20">
+					<div className="mt-6 mx-auto md:flex pt-12">
+						<div className="w-full w-2/5">
+							<div className="flex justify-center mb-4 md:mb-0 md:ml-20">
+								<a href="#" className="text-gray-400 hover:text-gray-500">
+									<img className="hidden md:block w-10" src="/facebook.svg"></img>
+									<img className="md:hidden w-10" src="/facebook-m.svg"></img>
+								</a>
+								<a href="#" className="ml-3 text-gray-400 hover:text-gray-500">
+									<img className="hidden md:block w-10" src="/twitter.svg"></img>
+									<img className="md:hidden w-10" src="/twitter-m.svg"></img>
+								</a>
+								<a href="#" className="ml-3 text-gray-400 hover:text-gray-500">
+									<img className="hidden md:block w-10" src="/youtube.svg"></img>
+									<img className="md:hidden w-10" src="/youtube-m.svg"></img>
+								</a>
+								<a href="#" className="ml-3 text-gray-400 hover:text-gray-500">
+									<img className="hidden md:block w-10" src="/linkedin.svg"></img>
+									<img className="md:hidden w-10" src="/linkedin-m.svg"></img>
+								</a>
+								<a href="#" className="ml-3 text-gray-400 hover:text-gray-500">
+									<img className="hidden md:block w-10" src="/instagram.svg"></img>
+									<img className="md:hidden w-10" src="/instagram-m.svg"></img>
+								</a>
+								<a href="#" className="ml-3 text-gray-400 hover:text-gray-500">
+									<img className="hidden md:block w-10" src="/tiktok.svg"></img>
+									<img className="md:hidden w-10" src="/tiktok-m.svg"></img>
+								</a>
+							</div>
+						</div>
+						<div className="w-full w-3/5 flex items-center justify-center">
+							<nav className="md:-mx-5 -my-2 flex flex-wrap items-center justify-center">
+								<div className="px-5 py-2">
+									<a href="#" className="sfd-font-regular text-base leading-6 text-gray-800 md:text-white">
+										Terms and Conditions
+                    				</a>
+								</div>
+								<div className="px-5 py-2">
+									<a href="#" className="sfd-font-regular text-base leading-6 text-gray-800 md:text-white">
+										Privacy Policy
+                    				</a>
+								</div>
+								<div className="px-5 py-2">
+									<a href="#" className="sfd-font-regular text-base leading-6 text-gray-800 md:text-white">
+										2020 Copyright
+                    				</a>
+								</div>
+							</nav>
+
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
