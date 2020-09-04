@@ -137,7 +137,7 @@ const Home = () => (
 							</li>
 							<li className="flex">
 								<div className="flex">
-									<div className="mt-8">
+									<div className="mt-6">
 										<img className="w-36 pl-2" src="/Logo-With-Text.svg"></img>
 										<p className="sfd-font-regular mt-5 pl-2 pr-12 text-base md:text-lg leading-6 text-gray-800 lg:text-gray-800">
 											Creative news templates and custom made videos with engaging audio give your ears and eyes a treat. We are never done improving and hope to offer you something exciting every time you open the So.Fa.Dog app.
@@ -182,15 +182,15 @@ const Home = () => (
 								</div>
 								<div className="flex">
 									<div className="w-1/2 mr-4">
-										<label htmlFor="full_name" className="sr-only sfd-font-regular">Full name</label>
+										<label htmlFor="full_name" className="sr-only sfd-font-regular">First Name</label>
 										<div className="relative rounded-md shadow-sm">
-											<input id="full_name" className="sfd-form-input sfd-font-regular block w-full py-3 px-4 placeholder-gray-500 transition ease-in-out duration-150" placeholder="Full name" />
+											<input id="first_name" className="sfd-form-input sfd-font-regular block w-full py-3 px-4 placeholder-gray-500 transition ease-in-out duration-150" placeholder="First Name" />
 										</div>
 									</div>
 									<div className="w-1/2 ml-4">
-										<label htmlFor="full_name" className="sr-only sfd-font-regular">Full name</label>
+										<label htmlFor="full_name" className="sr-only sfd-font-regular">Last Name</label>
 										<div className="relative rounded-md shadow-sm">
-											<input id="full_name" className="sfd-form-input sfd-font-regular block w-full py-3 px-4 placeholder-gray-500 transition ease-in-out duration-150" placeholder="Full name" />
+											<input id="last_name" className="sfd-form-input sfd-font-regular block w-full py-3 px-4 placeholder-gray-500 transition ease-in-out duration-150" placeholder="Last Name" />
 										</div>
 									</div>
 								</div>
