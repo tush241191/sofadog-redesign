@@ -74,7 +74,7 @@ const Home = () => (
 							<li className="mt-7">
 								<div className="flex">
 									<div className="mx-auto flex md:justify-end">
-										<img className="w-full sm:mx-auto sm:w-8/12 md:w-3/4" src="/barber.svg"></img>
+										<img className="w-full sm:mx-auto sm:w-8/12 md:w-3/4" src="/barber.png"></img>
 									</div>
 								</div>
 							</li>
@@ -120,7 +120,7 @@ const Home = () => (
 							<li className="mt-4">
 								<div className="grid md:flex">
 									<div className="flex justify-center md:justify-end">
-										<img className="w-3/5 sm:w-3/5 md:w-8/12" src="/mobile.svg"></img>
+										<img className="w-3/5 sm:w-3/5 md:w-8/12" src="/mobile.png"></img>
 										<div className="sm:flex justify-center hidden md:hidden ml-5">
 											<img className="mr-1 w-28 cursor-pointer" src="/apple.svg"></img>
 											<img className="ml-1 w-28 cursor-pointer" src="/android.svg"></img>
