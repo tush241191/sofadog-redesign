@@ -84,6 +84,76 @@ const Home = () => (
 						</div>
 					</div>
 				</div>
+				<div className="pt-5">
+					<div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-24">
+						<div className="">
+							<ul className="flex flex-col-reverse md:grid md:grid-cols-2 md:col-gap-8 md:row-gap-10">
+								<li className="mt-4">
+									<div className="flex">
+										<div className="mx-auto">
+											<img className="w-4/5 mx-auto sm:w-8/12 md:w-3/4" src="/no_fake_news.svg"></img>
+										</div>
+									</div>
+								</li>
+								<li className="flex items-center">
+									<div className="flex">
+										<div className="ml-2 md:ml-4">
+											<h4 className="sfd-purple-text sfd-font-bold text-3xl leading-6 text-gray-900">No fake news</h4>
+											<p className="sfd-font-regular mt-2 text-base md:text-lg leading-6 text-gray-800">
+												Each one of our news stories is custom-made and created by a professional video editor and journalist. We do our own fact checking. No AI, no Google Translate, no funny business.
+                            				</p>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div className="sfd-download-section mt-48">
+					<div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-24">
+						<div className="lg:text-center">
+							<h3 className="sfd-font-bold mt-2 text-3xl leading-8 tracking-tight text-gray-900 sm:text-5xl sm:leading-10">
+								Download the app and get swiping!
+            				</h3>
+						</div>
+
+						<div className="md:mt-16">
+							<ul className="flex flex-col-reverse md:grid md:grid-cols-2 md:col-gap-8 md:row-gap-10">
+								<li className="mt-4">
+									<div className="grid md:flex">
+										<div className="flex justify-center md:justify-end">
+											<img className="sfd-mobile-img sm:hidden" src="/mobile.png"></img>
+											<img className="w-full hidden sm:block sm:w-3/5 md:w-8/12" src="/mobile@2x.png"></img>
+											<div className="sm:flex justify-center hidden md:hidden ml-5">
+												<img className="mr-1 w-28 cursor-pointer" src="/apple.svg"></img>
+												<img className="ml-1 w-28 cursor-pointer" src="/android.svg"></img>
+											</div>
+										</div>
+										<div className="flex justify-center sm:hidden md:hidden mt-5">
+											<img className="mr-1 w-2/5 cursor-pointer" src="/apple.svg"></img>
+											<img className="ml-1 w-2/5 cursor-pointer" src="/android.svg"></img>
+										</div>
+
+									</div>
+								</li>
+								<li className="flex">
+									<div className="flex">
+										<div className="mt-6">
+											<img className="w-36 pl-2" src="/Logo-With-Text.svg"></img>
+											<p className="sfd-font-regular mt-5 pl-2 pr-12 text-base md:text-lg leading-6 text-gray-800 lg:text-gray-800">
+												Creative news templates and custom made videos with engaging audio give your ears and eyes a treat. We are never done improving and hope to offer you something exciting every time you open the So.Fa.Dog app.
+                            </p>
+											<div className="hidden md:flex mt-28">
+												<img className="mr-1 w-2/5 cursor-pointer" src="/apple.svg"></img>
+												<img className="ml-1 w-2/5 cursor-pointer" src="/android.svg"></img>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
