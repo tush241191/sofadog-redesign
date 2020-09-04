@@ -22,7 +22,7 @@ const Home = () => (
 						news without any nerve-racking advertising.
         			</p>
 					<div className="mt-5 mx-auto sm:block sm:justify-center md:mt-8">
-						<img className="w-full md:w-4/5 mx-auto sfd-cover-image" src="/cover_img2.jpeg"></img>
+						<img className="w-full md:w-4/5 mx-auto sfd-cover-image" src="/re_Landing page cover.png"></img>
 					</div>
 				</div>
 			</main>
@@ -137,7 +137,7 @@ const Home = () => (
 								<div className="flex">
 									<div className="mt-10 md:mt-16">
 										<img className="w-36 pl-2" src="/Logo-With-Text.svg"></img>
-										<p className="mt-6 pl-2 pr-12 text-base md:text-lg leading-6 text-gray-800 lg:text-gray-800 xl:text-white">
+										<p className="mt-6 pl-2 pr-12 text-base md:text-lg leading-6 text-gray-800 lg:text-gray-800">
 											Creative news templates and custom made videos with engaging audio give your ears and eyes a treat. We are never done improving and hope to offer you something exciting every time you open the So.Fa.Dog app.
               							</p>
 										<div className="hidden md:flex mt-28">
