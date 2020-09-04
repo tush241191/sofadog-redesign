@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 const Header = () => {
 
-    const [showMobileMenu, setShowMobileMenu] = useState(true)
+    const [showMobileMenu, setShowMobileMenu] = useState(false)
     const toggleMobileMenu = () => {
         setShowMobileMenu(v => !v)
     }
