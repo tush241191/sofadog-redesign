@@ -154,6 +154,57 @@ const Home = () => (
 						</div>
 					</div>
 				</div>
+				<div className="mt-10 md:mt-32">
+					<div className="relative max-w-7xl mx-auto lg:grid lg:grid-cols-6">
+						<div className="py-4 md:py-16 px-4 sm:px-6 lg:col-span-2 lg:px-8 lg:py-24 xl:pr-8">
+							<div className="max-w-lg mx-auto">
+								<h2 className="sfd-purple-text sfd-font-bold text-2xl text-center md:text-right leading-8 tracking-wide text-gray-900 sm:text-5xl sm:leading-10">
+									Got some feedbark?
+                				</h2>
+							</div>
+						</div>
+						<div className="bg-white md:pt-16 px-4 sm:px-6 lg:col-span-3 lg:pt-24 pb-10 lg:px-8 xl:pl-12">
+							<div className="max-w-lg mx-auto lg:max-w-none">
+								<form action="#" method="POST" className="grid grid-cols-1 row-gap-6">
+									<div>
+										<label htmlFor="message" className="sfd-font-regular sr-only">Message</label>
+										<div className="relative rounded-md shadow-sm">
+											<textarea id="message" rows={4} className="sfd-form-input sfd-font-regular block w-full py-3 px-4 placeholder-gray-500 transition ease-in-out duration-150" placeholder="Message"></textarea>
+										</div>
+									</div>
+									<div>
+										<label htmlFor="email" className="sr-only sfd-font-regular">Email</label>
+										<div className="relative rounded-md shadow-sm">
+											<input id="email" type="email" className="sfd-form-input sfd-font-regular block w-full py-3 px-4 placeholder-gray-500 transition ease-in-out duration-150" placeholder="Email" />
+										</div>
+									</div>
+									<div className="flex">
+										<div className="w-1/2 mr-4">
+											<label htmlFor="full_name" className="sr-only sfd-font-regular">First Name</label>
+											<div className="relative rounded-md shadow-sm">
+												<input id="first_name" className="sfd-form-input sfd-font-regular block w-full py-3 px-4 placeholder-gray-500 transition ease-in-out duration-150" placeholder="First Name" />
+											</div>
+										</div>
+										<div className="w-1/2 ml-4">
+											<label htmlFor="full_name" className="sr-only sfd-font-regular">Last Name</label>
+											<div className="relative rounded-md shadow-sm">
+												<input id="last_name" className="sfd-form-input sfd-font-regular block w-full py-3 px-4 placeholder-gray-500 transition ease-in-out duration-150" placeholder="Last Name" />
+											</div>
+										</div>
+									</div>
+									<div className="w-full mt-10">
+										<span className="inline-flex w-full md:w-1/5 rounded-md shadow-sm">
+											<button type="submit" className="sfd-feedback-btn sfd-font-regular w-full inline-flex justify-center py-2 px-8 border border-transparent text-white text-base leading-6 font-medium rounded-md text-white focus:outline-none transition duration-150 ease-in-out">
+												SEND
+                            				</button>
+										</span>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div className="sfd-font-regular mt-6 px-4 md:px-0 text-sm md:text-xl text-center">Your feedback is important to us, please write with any questions or feedback. Thanks for your support!</div>
+				</div>
 			</div>
 		</div>
 	</div>
