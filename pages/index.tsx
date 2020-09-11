@@ -3,20 +3,20 @@ import Head from 'next/head';
 
 import Header from './_components/_layouts/Header';
 const Home = () => (
-	<div className="bg-white">
+	<div className="">
 		<Head>
 			<title>So.Fa.Dog</title>
 			<link rel="icon" href="/color-logo.ico" />
 		</Head>
 
-		<div className="w-full">
+		<div className="max-w-screen-xl mx-auto bg-white">
 			<Header />
 			<div className="main-section">
 				<main className="mt-2 mx-auto max-w-screen-xl px-4 sm:mt-2 sm:px-6 md:mt-4 lg:mt-6 xl:mt-8">
 					<div className="text-center">
 						<h2 className="sfd-purple-text sfd-font-bold text-4xl tracking-tight leading-10 sm:text-5xl sm:leading-none lg:text-6xl">
 							Meet so.fa.dog's App
-        			</h2>
+        				</h2>
 						<p className="sfd-font-regular mt-3 max-w-md mx-auto text-base text-gray-800 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
 							Hungry for news but short on time? So.Fa.Dog video news app delivers the latest  news when
 							you’re on your way. Our custom made short-form videos cover the hottest and most crucial
@@ -33,21 +33,24 @@ const Home = () => (
 				</main>
 				<div className="mt-20">
 					<div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-24">
-						<div className="">
+						<div className="w-full text-center">
+							<span className="sfd-font-bold text-3xl md:text-5xl">What's so special about us?</span>
+						</div>
+						<div className="mt-5">
 							<ul className="w-full flex flex-col-reverse md:flex-row ">
-								<li className="mt-4 w-full md:w-1/4 lg:mt-7 flex justify-end">
+								<li className="mt-4 w-full md:w-1/4 lg:w-2/5 lg:mt-7 lg:pr-28 flex justify-center lg:justify-end">
 									<div className="flex">
 										<div className="mx-auto">
 											<img className="mx-auto w-3/5 lg:w-3/4" src="/no_ads.svg"></img>
 										</div>
 									</div>
 								</li>
-								<li className="w-full md:w-3/4 lg:pt-14 lg:pl-28 flex items-center">
+								<li className="w-full md:w-3/4 lg:w-3/5 lg:pt-14 lg:pl-28 flex items-center">
 									<div className="flex">
 										<div className="ml-2 md:ml-4">
 											<h4 className="sfd-purple-text sfd-font-bold text-3xl md:text-xl lg:text-3xl leading-6 text-gray-900">No ads</h4>
 											<p className="sfd-font-regular mt-2 text-base md:text-lg leading-6 text-gray-800">
-											We believe that the best things in life are free. Free of advertisements that is. Our app delivers only news, no nerve-racking advertising or pop-ups.
+												We believe that the best things in life are free. Free of advertisements that is. Our app delivers only news, no nerve-racking advertising or pop-ups.
                             				</p>
 										</div>
 									</div>
@@ -56,11 +59,11 @@ const Home = () => (
 						</div>
 					</div>
 				</div>
-				<div className="sfd-no-long-read-section w-full bg-white mt-2">
+				<div className="sfd-no-long-read-section w-full bg-white lg:pt-20">
 					<div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-10 pt-1">
-						<div className="md:mt-10">
+						<div className="md:mt-10 lg:mt-1">
 							<ul className="w-full md:flex">
-								<li className="w-full md:w-3/5 flex lg:pt-14 lg:pr-28">
+								<li className="w-full md:w-3/5 flex md:pt-8 lg:pr-28 lg:pb-20 xl:pb-1">
 									<div className="flex">
 										<div className="ml-2 lg:ml-28">
 											<h4 className="sfd-font-bold text-3xl md:text-xl lg:text-3xl leading-6 sfd-purple-text lg:text-white">No long reads</h4>
@@ -70,11 +73,11 @@ const Home = () => (
 										</div>
 									</div>
 								</li>
-								<li className="w-full md:w-2/5 lg:mt-7 flex md:justify-end mt-2">
+								<li className="w-full md:w-2/5 lg:mt-7 justify-center flex md:justify-end mt-2">
 									<div className="flex">
 										<div className="mx-auto flex justify-center md:justify-end">
 											<img className="md:hidden" src="/barber.png"></img>
-											<img className="hidden md:block md:mx-auto md:w-3/4" src="/barber@2x.png"></img>
+											<img className="hidden md:block md:mx-auto md:w-3/4 xl:w-full" src="/barber@2x.png"></img>
 										</div>
 									</div>
 								</li>
@@ -82,18 +85,18 @@ const Home = () => (
 						</div>
 					</div>
 				</div>
-				<div className="pt-5 md:mt-5">
+				<div className="pt-5 lg:pt-1 md:mt-5 lg:mt-1">
 					<div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-24">
 						<div className="">
 							<ul className="w-full flex flex-col-reverse md:flex-row ">
-								<li className="mt-4 w-full md:w-1/4 lg:mt-7 flex justify-center md:justify-end">
+								<li className="mt-4 w-full md:w-1/4 lg:w-2/5 lg:mt-7 lg:pr-28 flex justify-center lg:justify-end">
 									<div className="flex">
 										<div className="mx-auto">
 											<img className="mx-auto w-3/5 lg:w-3/4" src="/no_fake_news.svg"></img>
 										</div>
 									</div>
 								</li>
-								<li className="w-full md:w-3/4 lg:pt-14 lg:pl-28 flex items-center">
+								<li className="w-full md:w-3/4 lg:w-3/5 lg:pt-14 lg:pl-28 flex items-center">
 									<div className="flex">
 										<div className="ml-2 md:ml-4">
 											<h4 className="sfd-purple-text sfd-font-bold text-3xl md:text-xl lg:text-3xl leading-6 text-gray-900">No fake news</h4>
@@ -107,63 +110,63 @@ const Home = () => (
 						</div>
 					</div>
 				</div>
-				<div className="sfd-download-section mt-20 md:mt-24 lg:mt-48">
+				<div className="sfd-download-section mt-20 md:mt-24 lg:mt-48 lg:pb-10">
 					<div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-24">
 						<div className="lg:text-center sm:px-40 lg:px-2">
 							<h3 className="sfd-font-bold text-center mt-2 text-3xl md:text-4xl lg:text-5xl leading-8 tracking-tight text-gray-900  sm:leading-10">
 								Download the app and get swiping!
             				</h3>
 						</div>
-						<div className="mt-5 md:mt-16">
-							<ul className="flex flex-col-reverse md:grid md:grid-cols-2 md:col-gap-8 md:row-gap-10">
-								<li className="mt-4">
+						<div className="mt-5 lg:mt-16">
+							<ul className="flex flex-col-reverse lg:flex-row w-full">
+								<li className="mt-4 w-full lg:pr-10">
 									<div className="grid md:flex">
 										<div className="flex justify-center md:justify-end">
-											<img className="w-full hidden sm:block sm:w-3/5 md:w-8/12" src="/mobile@2x.png"></img>
+											<img className="w-full hidden lg:block sm:w-3/5 md:w-8/12" src="/mobile@2x.png"></img>
 											<div className="sm:flex justify-center hidden md:hidden ml-5">
 												<img className="mr-1 w-28 cursor-pointer" src="/apple.svg"></img>
 												<img className="ml-1 w-28 cursor-pointer" src="/android.svg"></img>
 											</div>
 										</div>
-										<div className="flex justify-center lg:hidden mt-3">
+										<div className="flex justify-center md:hidden mt-3">
 											<img className="mr-1 w-1/2 cursor-pointer" src="/apple.svg"></img>
 											<img className="ml-1 w-1/2 cursor-pointer" src="/android.svg"></img>
 										</div>
 
 									</div>
 								</li>
-								<li className="flex">
+								<li className="flex w-full">
 									<div className="flex">
 										<div className="mt-6">
 											<img className="w-36 pl-2" src="/color-logo-with-text.png" alt="So.Fa.Dog"></img>
 											<p className="sfd-font-regular mt-5 pl-2 pr-12 text-base md:text-lg leading-6 text-gray-800 lg:text-gray-800">
 												Creative news templates and custom made videos with engaging audio give your ears and eyes a treat. We are never done improving and hope to offer you something exciting every time you open the So.Fa.Dog app.
                             				</p>
-											<div className="hidden md:flex mt-28">
-												<img className="mr-1 w-2/5 cursor-pointer" src="/apple.svg"></img>
-												<img className="ml-1 w-2/5 cursor-pointer" src="/android.svg"></img>
+											<div className="hidden md:flex md:justify-center lg:justify-start mt-10 lg:mt-28">
+												<img className="mr-1 w-1/3 cursor-pointer" src="/apple.svg"></img>
+												<img className="ml-1 w-1/3 cursor-pointer" src="/android.svg"></img>
 											</div>
 										</div>
 									</div>
 								</li>
 							</ul>
-							<div className="w-full flex justify-center lg:hidden mt-8">
-								<img className="sfd-mobile-img" src="/mobile.png"></img>
-							</div>
 						</div>
 					</div>
 				</div>
-				<div className="mt-10 md:mt-32">
+				<div className="w-full sfd-mobile-md flex justify-center lg:hidden mt-8 pb-12">
+					<img className="sfd-mobile-img" src="/mobile.png"></img>
+				</div>
+				<div className="mt-10 md:mt-32 lg:mt-20">
 					<div className="relative max-w-7xl mx-auto lg:grid lg:grid-cols-6">
-						<div className="py-4 md:py-16 px-4 sm:px-6 lg:col-span-2 lg:px-8 lg:py-24 xl:pr-8">
-							<div className="max-w-lg mx-auto">
-								<h2 className="sfd-purple-text sfd-font-bold text-2xl text-center md:text-right leading-8 tracking-wide text-gray-900 sm:text-5xl sm:leading-10">
+						<div className="flex justify-center lg:justify-end py-4 md:py-16 px-4 sm:px-6 lg:px-1 lg:col-span-2 lg:pl-6 lg:py-24">
+							<div className="max-w-lg lg:w-64">
+								<h2 className="sfd-font-bold text-2xl text-center lg:text-left leading-8 tracking-wide text-gray-900 sm:text-5xl sm:leading-10">
 									Got some feedbark?
                 				</h2>
 							</div>
 						</div>
-						<div className="bg-white md:pt-16 px-4 sm:px-6 lg:col-span-3 lg:pt-24 pb-10 lg:px-8 xl:pl-12">
-							<div className="max-w-lg mx-auto lg:max-w-none">
+						<div className="bg-white lg:pt-16 px-4 sm:px-6 lg:col-span-3 lg:pt-24 pb-10 lg:px-10 xl:pl-12">
+							<div className="mx-auto lg:max-w-none">
 								<form action="#" method="POST" className="grid grid-cols-1 row-gap-6">
 									<div>
 										<label htmlFor="message" className="sfd-font-regular sr-only">Message</label>
@@ -192,7 +195,7 @@ const Home = () => (
 										</div>
 									</div>
 									<div className="w-full mt-10">
-										<span className="inline-flex w-full md:w-1/5 rounded-md shadow-sm">
+										<span className="inline-flex w-full lg:w-1/5 rounded-md shadow-sm">
 											<button type="submit" className="sfd-feedback-btn sfd-font-regular w-full inline-flex justify-center py-2 px-8 border border-transparent text-white text-base leading-6 font-medium rounded-md text-white focus:outline-none transition duration-150 ease-in-out">
 												SEND
                             				</button>
@@ -202,52 +205,52 @@ const Home = () => (
 							</div>
 						</div>
 					</div>
-					<div className="sfd-font-regular mt-6 px-4 md:px-0 text-sm md:text-xl text-center">Your feedback is important to us, please write with any questions or feedback. Thanks for your support!</div>
+					<div className="sfd-font-regular mt-6 px-5 lg:px-0 text-sm md:text-lg lg:text-xl text-center">Your feedback is important to us, please write with any questions or feedback. Thanks for your support!</div>
 				</div>
-				<div className="sfd-footer md:py-10 mt-20">
-					<div className="mt-6 mx-auto md:flex pt-12">
-						<div className="w-full w-2/5">
-							<div className="flex justify-center mb-4 md:mb-0 md:ml-20">
+				<div className="sfd-footer md:py-10 lg:mt-20">
+					<div className="mt-6 mx-auto lg:flex pt-12">
+						<div className="w-full lg:w-2/5">
+							<div className="flex justify-center mb-4 md:mb-12 lg:mb-0 lg:ml-20">
 								<a href="#" className="text-gray-400 hover:text-gray-500">
-									<img className="hidden md:block w-10" src="/facebook.svg"></img>
-									<img className="md:hidden w-10" src="/facebook-m.svg"></img>
+									<img className="hidden lg:block w-10" src="/facebook.svg"></img>
+									<img className="lg:hidden w-10" src="/facebook-m.svg"></img>
 								</a>
 								<a href="#" className="ml-3 text-gray-400 hover:text-gray-500">
-									<img className="hidden md:block w-10" src="/twitter.svg"></img>
-									<img className="md:hidden w-10" src="/twitter-m.svg"></img>
+									<img className="hidden lg:block w-10" src="/twitter.svg"></img>
+									<img className="lg:hidden w-10" src="/twitter-m.svg"></img>
 								</a>
 								<a href="#" className="ml-3 text-gray-400 hover:text-gray-500">
-									<img className="hidden md:block w-10" src="/youtube.svg"></img>
-									<img className="md:hidden w-10" src="/youtube-m.svg"></img>
+									<img className="hidden lg:block w-10" src="/youtube.svg"></img>
+									<img className="lg:hidden w-10" src="/youtube-m.svg"></img>
 								</a>
 								<a href="#" className="ml-3 text-gray-400 hover:text-gray-500">
-									<img className="hidden md:block w-10" src="/linkedin.svg"></img>
-									<img className="md:hidden w-10" src="/linkedin-m.svg"></img>
+									<img className="hidden lg:block w-10" src="/linkedin.svg"></img>
+									<img className="lg:hidden w-10" src="/linkedin-m.svg"></img>
 								</a>
 								<a href="#" className="ml-3 text-gray-400 hover:text-gray-500">
-									<img className="hidden md:block w-10" src="/instagram.svg"></img>
-									<img className="md:hidden w-10" src="/instagram-m.svg"></img>
+									<img className="hidden lg:block w-10" src="/instagram.svg"></img>
+									<img className="lg:hidden w-10" src="/instagram-m.svg"></img>
 								</a>
 								<a href="#" className="ml-3 text-gray-400 hover:text-gray-500">
-									<img className="hidden md:block w-10" src="/tiktok.svg"></img>
-									<img className="md:hidden w-10" src="/tiktok-m.svg"></img>
+									<img className="hidden lg:block w-10" src="/tiktok.svg"></img>
+									<img className="lg:hidden w-10" src="/tiktok-m.svg"></img>
 								</a>
 							</div>
 						</div>
-						<div className="w-full w-3/5 flex items-center justify-center">
-							<nav className="md:-mx-5 -my-2 flex flex-wrap items-center justify-center">
+						<div className="w-full lg:w-3/5 flex items-center justify-center">
+							<nav className="lg:-mx-5 -my-2 flex flex-wrap items-center justify-center">
 								<div className="px-5 py-2">
-									<a href="#" className="sfd-font-regular text-base leading-6 text-gray-800 md:text-white">
+									<a href="#" className="sfd-font-regular text-base leading-6 sfd-purple-text lg:text-white">
 										Terms and Conditions
                     				</a>
 								</div>
 								<div className="px-5 py-2">
-									<a href="#" className="sfd-font-regular text-base leading-6 text-gray-800 md:text-white">
+									<a href="#" className="sfd-font-regular text-base leading-6 sfd-purple-text lg:text-white">
 										Privacy Policy
                     				</a>
 								</div>
 								<div className="px-5 py-2">
-									<a href="#" className="sfd-font-regular text-base leading-6 text-gray-800 md:text-white">
+									<a href="#" className="sfd-font-regular text-base leading-6 sfd-purple-text lg:text-white">
 										2020 Copyright
                     				</a>
 								</div>

@@ -20,6 +20,10 @@
     font-family: 'Comfortaa-Bold';
     src: url(./fonts/Comfortaa-VariableFont_wght.ttf) format('truetype');
 }
+body{
+    background-color: #622A90;
+    background-image: linear-gradient(to right, #622A90 0%, #BA3095 95%), linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
+}
 
 .sfd-purple-text {
     color: #790ABF;
@@ -95,6 +99,12 @@
         bottom: 15%;
         left: 10%;
     }
+    .sfd-mobile-md{
+        background: url('/gradient_line_r_to_l_large.png');
+        background-size: 100% 50%;
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
 }
 
 /* Large (lg) */
@@ -109,13 +119,13 @@
     }
     .sfd-no-long-read-section {
         background: url('/gradient_line_l_to_r_large@2x.png');
-        background-size: 100% 100%;
+        background-size: 100% 85%;
         background-repeat: no-repeat;
         background-position: bottom;
     }
     .sfd-download-section {
         background: url('/gradient_line_r_to_l_large.png');
-        background-size: 100% 100%;
+        background-size: 100% 55%;
         background-repeat: no-repeat;
         background-position: bottom;
     }
@@ -130,6 +140,9 @@
 
 @media (min-width: 1280px) {
     .sfd-download-section {
+        background: url('/gradient_line_r_to_l_large.png');
         background-size: 100% 70%;
+        background-repeat: no-repeat;
+        background-position: bottom;
     }
 }
