@@ -20,7 +20,7 @@
     font-family: 'Comfortaa-Bold';
     src: url(./fonts/Comfortaa-VariableFont_wght.ttf) format('truetype');
 }
-body{
+.sfd-main-body{
     background-color: #622A90;
     background-image: linear-gradient(to right, #622A90 0%, #BA3095 95%), linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
 }

@@ -3,7 +3,7 @@ import Head from 'next/head';
 
 import Header from './_components/_layouts/Header';
 const Home = () => (
-	<div className="">
+	<div className="sfd-main-body">
 		<Head>
 			<title>So.Fa.Dog</title>
 			<link rel="icon" href="/color-logo.ico" />
