@@ -14,7 +14,7 @@ const Home = () => (
 			<div className="main-section">
 				<main className="mt-2 mx-auto max-w-screen-xl px-4 sm:mt-2 sm:px-6 md:mt-4 lg:mt-6 xl:mt-8">
 					<div className="text-center">
-						<h2 className="sfd-purple-text sfd-font-bold text-4xl tracking-tight leading-10 sm:text-5xl sm:leading-none md:text-6xl">
+						<h2 className="sfd-purple-text sfd-font-bold text-4xl tracking-tight leading-10 sm:text-5xl sm:leading-none lg:text-6xl">
 							Meet so.fa.dog's App
         			</h2>
 						<p className="sfd-font-regular mt-3 max-w-md mx-auto text-base text-gray-800 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
@@ -26,34 +26,28 @@ const Home = () => (
 							<img className="w-full mx-auto sfd-cover-image" src="/re_Landing page cover.png"></img>
 							<div className="grid leading-tight sfd-font-comfortaa-bold sfd-slogan-text text-base md:text-3xl lg:text-4xl xl:text-5xl text-black absolute">
 								<span className="text-left">10 second video news</span>
-								<span className="text-left">on your phone</span>
+								<span className="text-left">on your phone!</span>
 							</div>
 						</div>
 					</div>
 				</main>
-				<div className="bg-white mt-20">
+				<div className="mt-20">
 					<div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-24">
-						<div className="md:text-center">
-							<h3 className="sfd-font-bold mt-2 text-3xl leading-8 tracking-tight text-gray-900 sm:text-5xl sm:leading-10">
-								What’s so special about us?
-            				</h3>
-						</div>
-
-						<div className="mt-10 md:mt-20">
-							<ul className="flex flex-col-reverse md:grid md:grid-cols-2 md:col-gap-8 md:row-gap-10">
-								<li className="mt-4">
+						<div className="">
+							<ul className="w-full flex flex-col-reverse md:flex-row ">
+								<li className="mt-4 w-full md:w-1/4 lg:mt-7 flex justify-end">
 									<div className="flex">
 										<div className="mx-auto">
-											<img className="w-full sm:mx-auto sm:w-8/12 md:w-3/4" src="/no_ads.svg"></img>
+											<img className="mx-auto w-3/5 lg:w-3/4" src="/no_ads.svg"></img>
 										</div>
 									</div>
 								</li>
-								<li className="flex items-center">
+								<li className="w-full md:w-3/4 lg:pt-14 lg:pl-28 flex items-center">
 									<div className="flex">
 										<div className="ml-2 md:ml-4">
-											<h4 className="sfd-purple-text sfd-font-bold text-3xl leading-6 text-gray-900">No ads</h4>
-											<p className="sfd-font-regular mt-2 text-base leading-6 text-gray-800">
-												We believe that the best things in life are free. Free of advertisements that is. Our app delivers only news, no nerve-racking advertising or pop-ups.
+											<h4 className="sfd-purple-text sfd-font-bold text-3xl md:text-xl lg:text-3xl leading-6 text-gray-900">No ads</h4>
+											<p className="sfd-font-regular mt-2 text-base md:text-lg leading-6 text-gray-800">
+											We believe that the best things in life are free. Free of advertisements that is. Our app delivers only news, no nerve-racking advertising or pop-ups.
                             				</p>
 										</div>
 									</div>
@@ -62,25 +56,25 @@ const Home = () => (
 						</div>
 					</div>
 				</div>
-				<div className="sfd-no-long-read-section w-full bg-white">
+				<div className="sfd-no-long-read-section w-full bg-white mt-2">
 					<div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-10 pt-1">
 						<div className="md:mt-10">
-							<ul className="md:grid md:grid-cols-2 md:col-gap-8 md:row-gap-10">
-								<li className="flex md:pt-14">
+							<ul className="w-full md:flex">
+								<li className="w-full md:w-3/5 flex lg:pt-14 lg:pr-28">
 									<div className="flex">
-										<div className="ml-2 md:ml-28">
-											<h4 className="sfd-font-bold text-3xl leading-6 sfd-purple-text md:text-white">No long reads</h4>
-											<p className="sfd-font-regular mt-2 text-base md:text-lg leading-6 text-gray-800 md:text-white">
+										<div className="ml-2 lg:ml-28">
+											<h4 className="sfd-font-bold text-3xl md:text-xl lg:text-3xl leading-6 sfd-purple-text lg:text-white">No long reads</h4>
+											<p className="sfd-font-regular mt-2 text-base md:text-lg leading-6 text-gray-800 lg:text-white">
 												Your daily dose of exitement through eight categories that cover the whole world – from scientific discoveries and world economy to arts and fashion news. Each story in 10 seconds. 24/7/365. Just swipe and enjoy!
                             				</p>
 										</div>
 									</div>
 								</li>
-								<li className="mt-7">
+								<li className="w-full md:w-2/5 lg:mt-7 flex md:justify-end mt-2">
 									<div className="flex">
 										<div className="mx-auto flex justify-center md:justify-end">
-											<img className="sm:hidden" src="/barber.png"></img>
-											<img className="hidden sm:block sm:mx-auto sm:w-3/4" src="/barber@2x.png"></img>
+											<img className="md:hidden" src="/barber.png"></img>
+											<img className="hidden md:block md:mx-auto md:w-3/4" src="/barber@2x.png"></img>
 										</div>
 									</div>
 								</li>
@@ -88,21 +82,21 @@ const Home = () => (
 						</div>
 					</div>
 				</div>
-				<div className="pt-5">
+				<div className="pt-5 md:mt-5">
 					<div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-24">
 						<div className="">
-							<ul className="flex flex-col-reverse md:grid md:grid-cols-2 md:col-gap-8 md:row-gap-10">
-								<li className="mt-4">
+							<ul className="w-full flex flex-col-reverse md:flex-row ">
+								<li className="mt-4 w-full md:w-1/4 lg:mt-7 flex justify-center md:justify-end">
 									<div className="flex">
 										<div className="mx-auto">
-											<img className="w-4/5 mx-auto sm:w-8/12 md:w-3/4" src="/no_fake_news.svg"></img>
+											<img className="mx-auto w-3/5 lg:w-3/4" src="/no_fake_news.svg"></img>
 										</div>
 									</div>
 								</li>
-								<li className="flex items-center">
+								<li className="w-full md:w-3/4 lg:pt-14 lg:pl-28 flex items-center">
 									<div className="flex">
 										<div className="ml-2 md:ml-4">
-											<h4 className="sfd-purple-text sfd-font-bold text-3xl leading-6 text-gray-900">No fake news</h4>
+											<h4 className="sfd-purple-text sfd-font-bold text-3xl md:text-xl lg:text-3xl leading-6 text-gray-900">No fake news</h4>
 											<p className="sfd-font-regular mt-2 text-base md:text-lg leading-6 text-gray-800">
 												Each one of our news stories is custom-made and created by a professional video editor and journalist. We do our own fact checking. No AI, no Google Translate, no funny business.
                             				</p>
@@ -113,29 +107,27 @@ const Home = () => (
 						</div>
 					</div>
 				</div>
-				<div className="sfd-download-section mt-48">
+				<div className="sfd-download-section mt-20 md:mt-24 lg:mt-48">
 					<div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-24">
-						<div className="lg:text-center">
-							<h3 className="sfd-font-bold mt-2 text-3xl leading-8 tracking-tight text-gray-900 sm:text-5xl sm:leading-10">
+						<div className="lg:text-center sm:px-40 lg:px-2">
+							<h3 className="sfd-font-bold text-center mt-2 text-3xl md:text-4xl lg:text-5xl leading-8 tracking-tight text-gray-900  sm:leading-10">
 								Download the app and get swiping!
             				</h3>
 						</div>
-
-						<div className="md:mt-16">
+						<div className="mt-5 md:mt-16">
 							<ul className="flex flex-col-reverse md:grid md:grid-cols-2 md:col-gap-8 md:row-gap-10">
 								<li className="mt-4">
 									<div className="grid md:flex">
 										<div className="flex justify-center md:justify-end">
-											<img className="sfd-mobile-img sm:hidden" src="/mobile.png"></img>
 											<img className="w-full hidden sm:block sm:w-3/5 md:w-8/12" src="/mobile@2x.png"></img>
 											<div className="sm:flex justify-center hidden md:hidden ml-5">
 												<img className="mr-1 w-28 cursor-pointer" src="/apple.svg"></img>
 												<img className="ml-1 w-28 cursor-pointer" src="/android.svg"></img>
 											</div>
 										</div>
-										<div className="flex justify-center sm:hidden md:hidden mt-5">
-											<img className="mr-1 w-2/5 cursor-pointer" src="/apple.svg"></img>
-											<img className="ml-1 w-2/5 cursor-pointer" src="/android.svg"></img>
+										<div className="flex justify-center lg:hidden mt-3">
+											<img className="mr-1 w-1/2 cursor-pointer" src="/apple.svg"></img>
+											<img className="ml-1 w-1/2 cursor-pointer" src="/android.svg"></img>
 										</div>
 
 									</div>
@@ -155,6 +147,9 @@ const Home = () => (
 									</div>
 								</li>
 							</ul>
+							<div className="w-full flex justify-center lg:hidden mt-8">
+								<img className="sfd-mobile-img" src="/mobile.png"></img>
+							</div>
 						</div>
 					</div>
 				</div>
