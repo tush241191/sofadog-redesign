@@ -210,7 +210,7 @@ const Home = () => {
 						</div>
 					</div>
 					<div className="w-full sfd-mobile-md flex justify-center lg:hidden mt-8 pb-12">
-						<img className="sfd-mobile-img" src={downloadSection?.mobileImage.fields.file.url}></img>
+						<img className="sfd-mobile-img w-8/12 md:w-1/3" src={downloadSection?.mobileImage.fields.file.url}></img>
 					</div>
 					<div className="mt-10 md:mt-32 lg:mt-20">
 						<div className="relative max-w-7xl mx-auto lg:grid lg:grid-cols-6">
