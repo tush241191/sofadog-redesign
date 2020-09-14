@@ -1,51 +1,10 @@
 import React, { useEffect, useState } from 'react';
-const client = require('contentful').createClient({
-    space: 'ngmwejnykh1z',
-    accessToken: '3z8L1Ar3bfipHc-TAlbGIYED4DovPOyrmVxEYfBTyOI'
-  })
-const Header = () => {
 
+const Header = (props) => {
     const [header, setHeader] = useState(null);
-    const [mainSection, setMainSection] = useState(null);
-    const [features,setFeatures] = useState(null);
-    const [downloadSection,setDownloadSection] = useState(null);
-    const [feedback,setFeedBack] = useState(null);
-    const [footer,setFooter] = useState(null);
-    async function fetchEntries() {
-        const entries = await client.getEntries();
-        //console.log("Entries: ",entries)
-        if (entries.items) 
-        return entries.items
-        
-      }
-      
-        useEffect(() => {
-            async function fetchEntry() {
-            const data = await fetchEntries()
-            console.log("Data",data);
-            if(data.length > 0){
-                data.forEach(element => {
-                    console.log("element:- ",element);
-                    if(element.sys.contentType.sys.id == "header"){
-                        setHeader({...element.fields})
-                    }else if(element.sys.contentType.sys.id == "mainSection"){
-                        setMainSection({...element.fields})
-                    }else if(element.sys.contentType.sys.id == "features"){
-                        setFeatures({...element.fields})
-                    }else if(element.sys.contentType.sys.id == "downloadSection"){
-                        setDownloadSection({...element.fields})
-                    }else if(element.sys.contentType.sys.id == "feedback"){
-                        setFeedBack({...element.fields})
-                    }else if(element.sys.contentType.sys.id == "footer"){
-                        setFooter({...element.fields})
-                    }
-
-                });
-            }
-            
-            }
-            fetchEntry()
-        }, [])
+    useEffect(() => {
+        setHeader(props?.header)
+    })
 
     const [showMobileMenu, setShowMobileMenu] = useState(false)
     const toggleMobileMenu = () => {
@@ -58,11 +17,10 @@ const Header = () => {
                 <div className="flex justify-between h-28">
                     <div className="flex w-full">
                         <div className="w-1/5 flex-shrink-0 flex items-center">
-                            <img className="block lg:hidden h-12 w-auto" src="/color-logo.png" alt="So.Fa.Dog" />
-                            <img className="hidden lg:block h-16 w-auto" src="/color-logo-with-text.png" alt="So.Fa.Dog" />
+                            <img className="block h-12 lg:h-16 w-auto" src={header?.logo.fields.file.url} alt="So.Fa.Dog" />
                         </div>
                         <div className="w-4/5 hidden justify-end sm:ml-6 sm:flex">
-                            {header.menu.map((item,i)=>
+                            {header?.menu.map((item,i)=>
                                 <a href="#" className="sfd-menu sfd-font-regular ml-8 inline-flex items-center px-1 pt-1 text-base font-medium leading-5 text-gray-900 focus:outline-none transition duration-150 ease-in-out">
                                     {item}
                                 </a>
@@ -86,7 +44,7 @@ const Header = () => {
             {showMobileMenu && (
                 <div className="block sm:hidden">
                     <div className="pt-2 pb-3">
-                        {header.menu.map((item,i)=>
+                        {header?.menu.map((item,i)=>
                             <a href="#" className="sfd-menu sfd-font-regular mt-1 block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 focus:outline-none transition duration-150 ease-in-out">
                                 {item}
                             </a>
