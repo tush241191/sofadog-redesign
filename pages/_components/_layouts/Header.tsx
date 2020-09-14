@@ -16,10 +16,10 @@ const Header = (props) => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between h-28">
                     <div className="flex w-full">
-                        <div className="w-1/5 flex-shrink-0 flex items-center">
-                            <img className="block h-12 lg:h-16 w-auto" src={header?.logo.fields.file.url} alt="So.Fa.Dog" />
+                        <div className="w-4/5 md:w-1/4 lg:w-1/5 flex-shrink-0 flex items-center">
+                            <img className="block h-16 w-auto" src={header?.logo.fields.file.url} alt="So.Fa.Dog" />
                         </div>
-                        <div className="w-4/5 hidden justify-end sm:ml-6 sm:flex">
+                        <div className="w-1/5 md:w-3/4 lg:w-4/5 hidden justify-end sm:ml-6 sm:flex">
                             {header?.menu.map((item,i)=>
                                 <a href="#" className="sfd-menu sfd-font-regular ml-8 inline-flex items-center px-1 pt-1 text-base font-medium leading-5 text-gray-900 focus:outline-none transition duration-150 ease-in-out">
                                     {item}

@@ -18,19 +18,15 @@ const Home = () => {
 
 	async function fetchEntries() {
 		const entries = await client.getEntries();
-		//console.log("Entries: ",entries)
 		if (entries.items)
 			return entries.items
-
 	}
 
 	useEffect(() => {
 		async function fetchEntry() {
 			const data = await fetchEntries()
-			console.log("Data", data);
 			if (data.length > 0) {
 				data.forEach(element => {
-					console.log("element:- ", element);
 					if (element.sys.contentType.sys.id == "header") {
 						setHeader({ ...element.fields })
 					} else if (element.sys.contentType.sys.id == "mainSection") {
@@ -47,7 +43,6 @@ const Home = () => {
 
 				});
 			}
-
 		}
 		fetchEntry()
 	}, [])
@@ -88,7 +83,7 @@ const Home = () => {
 									<li className="mt-4 w-full md:w-1/4 lg:w-2/5 lg:mt-7 lg:pr-28 flex justify-center lg:justify-end">
 										<div className="flex">
 											<div className="mx-auto">
-													<img className="mx-auto w-3/5 lg:w-3/4" src={features?.noAdsImage.fields.file.url}></img>
+												<img className="mx-auto w-3/5 lg:w-3/4" src={features?.noAdsImage.fields.file.url}></img>
 											</div>
 										</div>
 									</li>
@@ -176,7 +171,7 @@ const Home = () => {
 							<div className="lg:text-center sm:px-40 lg:px-2">
 								<h3 className="sfd-font-bold text-center mt-2 text-3xl md:text-4xl lg:text-5xl leading-8 tracking-tight text-gray-900  sm:leading-10">
 									{downloadSection?.mainTitle}
-            				</h3>
+								</h3>
 							</div>
 							<div className="mt-5 lg:mt-16">
 								<ul className="flex flex-col-reverse lg:flex-row w-full">
@@ -202,7 +197,7 @@ const Home = () => {
 												<img className="w-36 pl-2" src={header?.logo.fields.file.url} alt="So.Fa.Dog"></img>
 												<p className="sfd-font-regular mt-5 pl-2 pr-12 text-base md:text-lg leading-6 text-gray-800 lg:text-gray-800">
 													{downloadSection?.content}
-                            				</p>
+												</p>
 												<div className="hidden md:flex md:justify-center lg:justify-start mt-10 lg:mt-28">
 													<img className="mr-1 w-1/3 cursor-pointer" src={downloadSection?.androidImage.fields.file.url}></img>
 													<img className="ml-1 w-1/3 cursor-pointer" src={downloadSection?.iOsImage.fields.file.url}></img>
@@ -223,7 +218,7 @@ const Home = () => {
 								<div className="max-w-lg lg:w-64">
 									<h2 className="sfd-font-bold text-2xl text-center lg:text-left leading-8 tracking-wide text-gray-900 sm:text-5xl sm:leading-10">
 										{feedback?.title}
-                				</h2>
+									</h2>
 								</div>
 							</div>
 							<div className="bg-white lg:pt-16 px-4 sm:px-6 lg:col-span-3 lg:pt-24 pb-10 lg:px-10 xl:pl-12">
@@ -259,7 +254,7 @@ const Home = () => {
 											<span className="inline-flex w-full lg:w-1/5 rounded-md shadow-sm">
 												<button type="submit" className="sfd-feedback-btn sfd-font-regular w-full inline-flex justify-center py-2 px-8 border border-transparent text-white text-base leading-6 font-medium rounded-md text-white focus:outline-none transition duration-150 ease-in-out">
 													{feedback?.submitButton}
-                            					</button>
+												</button>
 											</span>
 										</div>
 									</form>
@@ -300,21 +295,13 @@ const Home = () => {
 							</div>
 							<div className="w-full lg:w-3/5 flex items-center justify-center">
 								<nav className="lg:-mx-5 -my-2 flex flex-wrap items-center justify-center">
-									<div className="px-5 py-2">
-										<a href="#" className="sfd-font-regular text-base leading-6 sfd-purple-text lg:text-white">
-											Terms and Conditions
-                    				</a>
-									</div>
-									<div className="px-5 py-2">
-										<a href="#" className="sfd-font-regular text-base leading-6 sfd-purple-text lg:text-white">
-											Privacy Policy
-                    				</a>
-									</div>
-									<div className="px-5 py-2">
-										<a href="#" className="sfd-font-regular text-base leading-6 sfd-purple-text lg:text-white">
-											2020 Copyright
-                    				</a>
-									</div>
+									{footer?.menu.map((item, i) =>
+										<div className="px-5 py-2">
+											<a href="#" className="sfd-font-regular text-base leading-6 sfd-purple-text lg:text-white">
+												{item}
+											</a>
+										</div>
+									)}
 								</nav>
 
 							</div>
