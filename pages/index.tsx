@@ -4,8 +4,8 @@ import Head from 'next/head';
 import Header from './_components/_layouts/Header';
 
 const client = require('contentful').createClient({
-	space: 'ngmwejnykh1z',
-	accessToken: '3z8L1Ar3bfipHc-TAlbGIYED4DovPOyrmVxEYfBTyOI'
+	space: 'o9qnpzgj9434',
+	accessToken: 'D0V8zKEmlI_gFxra9uBJLTOnhyLTbXmjRxlkIjoYnzI'
 })
 const Home = () => {
 
@@ -66,8 +66,8 @@ const Home = () => {
 								{mainSection?.content}
 							</p>
 							<div className="w-full md:w-11/12 mt-5 mx-auto sm:block sm:justify-center md:mt-8 relative">
-								<img className="w-full mx-auto sfd-cover-image" src="/re_Landing page cover.png"></img>
-								<div className="grid leading-tight sfd-font-comfortaa-bold sfd-slogan-text text-base md:text-3xl lg:text-4xl xl:text-5xl text-black absolute">
+								<img className="w-full mx-auto sfd-cover-image" src={mainSection?.image.fields.file.url}></img>
+								<div className="w-1/2 grid leading-tight sfd-font-comfortaa-bold sfd-slogan-text text-sm md:text-3xl lg:text-4xl xl:text-5xl text-black absolute">
 									<span className="text-left">{mainSection?.slogan}</span>
 								</div>
 							</div>
