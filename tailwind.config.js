@@ -18,10 +18,16 @@ module.exports = {
                 "h-72": "20rem",
                 "h-80": "24rem",
                 "h-82": "25rem",
-            }),
+            })
         },
+        maxWidth: {
+            "max-w-screen-2xl": "1440px;"
+        }
     },
-    variants: { display: ["responsive", "hover", "focus"] },
+    variants: {
+        display: ["responsive", "hover", "focus"],
+        maxWidth: ['responsive', 'hover', 'focus']
+    },
     plugins: [
         require('@tailwindcss/ui'),
     ]

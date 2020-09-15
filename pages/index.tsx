@@ -54,7 +54,7 @@ const Home = () => {
 				<link rel="icon" href="/color-logo.ico" />
 			</Head>
 
-			<div className="max-w-screen-xl mx-auto bg-white">
+			<div className="sfd-max-width border-l border-r border-gray-200 mx-auto bg-white">
 				<Header header={header} />
 				<div className="main-section">
 					<main className="mt-2 mx-auto max-w-screen-xl px-4 sm:mt-2 sm:px-6 md:mt-4 lg:mt-6 xl:mt-8">

@@ -21,7 +21,11 @@
     src: url(./fonts/Comfortaa-VariableFont_wght.ttf) format('truetype');
 }
 .sfd-main-body{
-    background-color: #deccf2;
+    background-color: #fff;
+}
+
+.sfd-max-width{
+    max-width: 100%;
 }
 
 .sfd-purple-text {
@@ -141,6 +145,26 @@
     .sfd-download-section {
         background: url('/gradient_line_r_to_l_large.png');
         background-size: 100% 70%;
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
+}
+
+/* Extra Large (2xl) */
+
+@media (min-width: 1440px) {
+    .sfd-max-width{
+        max-width: 1440px;
+    }
+    .sfd-no-long-read-section {
+        background: url('/gradient_line_l_to_r_large@2x.png');
+        background-size: 100% 95%;
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }
+    .sfd-download-section {
+        background: url('/gradient_line_r_to_l_large.png');
+        background-size: 100% 75%;
         background-repeat: no-repeat;
         background-position: bottom;
     }
