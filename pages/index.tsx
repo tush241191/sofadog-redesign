@@ -73,7 +73,7 @@ const Home = () => {
 								{mainSection?.hasOwnProperty('image') && (
 									<img className="w-full mx-auto sfd-cover-image" src={mainSection?.image.fields.file.url}></img>
 								)}								
-								<div className="w-1/2 grid leading-tight sfd-font-comfortaa-bold sfd-slogan-text text-sm md:text-3xl lg:text-4xl xl:text-5xl text-black absolute">
+								<div className="w-1/2 grid leading-tight sfd-font-comfortaa-bold sfd-slogan-text text-xs sm:text-sm md:text-3xl lg:text-4xl xl:text-5xl text-black absolute">
 									<span className="text-left">
 										{mainSection?.hasOwnProperty('slogan') && (
 											mainSection?.slogan
@@ -147,8 +147,7 @@ const Home = () => {
 										<div className="flex">
 											{features?.hasOwnProperty('noLongReadsImage') && (
 												<div className="mx-auto flex justify-center md:justify-end">
-													<img className="md:hidden" src={features?.noLongReadsImage.fields.file.url}></img>
-													<img className="hidden md:block md:mx-auto md:w-3/4 xl:w-full" src={features?.noLongReadsImage.fields.file.url}></img>
+													<img className="w-full md:mx-auto md:w-3/4 xl:w-full h-full" src={features?.noLongReadsImage.fields.file.url}></img>
 												</div>
 											)}
 										</div>
@@ -205,23 +204,23 @@ const Home = () => {
 										<div className="grid md:flex">
 											<div className="flex justify-center md:justify-end">
 												{downloadSection?.hasOwnProperty('mobileImage') && (
-													<img className="w-full hidden lg:block sm:w-3/5 md:w-8/12" src={downloadSection?.mobileImage.fields.file.url}></img>
+													<img className="w-full hidden lg:block sm:w-3/5 md:w-8/12 h-full" src={downloadSection?.mobileImage.fields.file.url}></img>
 												)}
 												<div className="sm:flex justify-center hidden md:hidden ml-5">
 													{downloadSection?.hasOwnProperty('androidImage') && (
-														<img className="mr-1 w-28 cursor-pointer" src={downloadSection?.androidImage.fields.file.url}></img>
+														<img className="mr-1 w-28 h-full cursor-pointer" src={downloadSection?.androidImage.fields.file.url}></img>
 													)}
 													{downloadSection?.hasOwnProperty('iOsImage') && (
-														<img className="ml-1 w-28 cursor-pointer" src={downloadSection?.iOsImage.fields.file.url}></img>
+														<img className="ml-1 w-28 h-full cursor-pointer" src={downloadSection?.iOsImage.fields.file.url}></img>
 													)}
 												</div>
 											</div>
-											<div className="flex justify-center md:hidden mt-3">
+											<div className="flex justify-center md:hidden mt-3 h-16">
 												{downloadSection?.hasOwnProperty('androidImage') && (
-													<img className="mr-1 w-1/2 cursor-pointer" src={downloadSection?.androidImage.fields.file.url}></img>
+													<img className="mr-1 w-1/2 h-full cursor-pointer" src={downloadSection?.androidImage.fields.file.url}></img>
 												)}
 												{downloadSection?.hasOwnProperty('iOsImage') && (
-													<img className="ml-1 w-1/2 cursor-pointer" src={downloadSection?.iOsImage.fields.file.url}></img>
+													<img className="ml-1 w-1/2 h-full cursor-pointer" src={downloadSection?.iOsImage.fields.file.url}></img>
 												)}
 											</div>
 
@@ -241,12 +240,12 @@ const Home = () => {
 														downloadSection?.content
 													)}
 												</p>
-												<div className="hidden md:flex md:justify-center lg:justify-start mt-10 lg:mt-28">
+												<div className="hidden md:flex md:justify-center lg:justify-start mt-10 lg:mt-28 h-20 lg:h-12 xl:h-16">
 													{downloadSection?.hasOwnProperty('androidImage') && (
-														<img className="mr-1 w-1/3 cursor-pointer" src={downloadSection?.androidImage.fields.file.url}></img>
+														<img className="mr-1 w-1/3 h-full cursor-pointer" src={downloadSection?.androidImage.fields.file.url}></img>
 													)}
 													{downloadSection?.hasOwnProperty('iOsImage') && (
-														<img className="ml-1 w-1/3 cursor-pointer" src={downloadSection?.iOsImage.fields.file.url}></img>
+														<img className="ml-1 w-1/3 h-full cursor-pointer" src={downloadSection?.iOsImage.fields.file.url}></img>
 													)}
 												</div>
 											</div>
@@ -258,7 +257,7 @@ const Home = () => {
 					</div>
 					<div className="w-full sfd-mobile-md flex justify-center lg:hidden mt-8 pb-12">
 						{downloadSection?.hasOwnProperty('mobileImage') && (
-							<img className="sfd-mobile-img w-8/12 md:w-1/3" src={downloadSection?.mobileImage.fields.file.url}></img>
+							<img className="sfd-mobile-img w-8/12 md:w-1/3 h-full" src={downloadSection?.mobileImage.fields.file.url}></img>
 						)}
 					</div>
 					<div className="mt-10 md:mt-32 lg:mt-20">
