@@ -1,6 +1,7 @@
 // pages/index.jsx
 import React, { useEffect, useState } from 'react';
 import Head from 'next/head';
+import Link from 'next/link';
 import Header from './_components/_layouts/Header';
 
 const client = require('contentful').createClient({
@@ -72,7 +73,7 @@ const Home = () => {
 							<div className="w-full md:w-11/12 mt-5 mx-auto sm:block sm:justify-center md:mt-8 relative">
 								{mainSection?.hasOwnProperty('image') && (
 									<img className="w-full mx-auto sfd-cover-image" src={mainSection?.image.fields.file.url}></img>
-								)}								
+								)}
 								<div className="w-1/2 grid leading-tight sfd-font-comfortaa-bold sfd-slogan-text text-xs sm:text-sm md:text-3xl lg:text-4xl xl:text-5xl text-black absolute">
 									<span className="text-left">
 										{mainSection?.hasOwnProperty('slogan') && (
@@ -99,7 +100,7 @@ const Home = () => {
 											<div className="mx-auto">
 												{features?.hasOwnProperty('noAdsImage') && (
 													<img className="mx-auto w-3/5 lg:w-3/4" src={features?.noAdsImage.fields.file.url}></img>
-												)}												
+												)}
 											</div>
 										</div>
 									</li>
@@ -208,19 +209,27 @@ const Home = () => {
 												)}
 												<div className="sm:flex justify-center hidden md:hidden ml-5">
 													{downloadSection?.hasOwnProperty('androidImage') && (
-														<img className="mr-1 w-28 h-full cursor-pointer" src={downloadSection?.androidImage.fields.file.url}></img>
+														<Link href="/android">
+															<img className="mr-1 w-28 h-full cursor-pointer" src={downloadSection?.androidImage.fields.file.url}></img>
+														</Link>
 													)}
 													{downloadSection?.hasOwnProperty('iOsImage') && (
-														<img className="ml-1 w-28 h-full cursor-pointer" src={downloadSection?.iOsImage.fields.file.url}></img>
+														<Link href="/ios">
+															<img className="ml-1 w-28 h-full cursor-pointer" src={downloadSection?.iOsImage.fields.file.url}></img>
+														</Link>
 													)}
 												</div>
 											</div>
 											<div className="flex justify-center md:hidden mt-3 h-16">
 												{downloadSection?.hasOwnProperty('androidImage') && (
-													<img className="mr-1 w-1/2 h-full cursor-pointer" src={downloadSection?.androidImage.fields.file.url}></img>
+													<Link href="/android">
+														<img className="mr-1 w-1/2 h-full cursor-pointer" src={downloadSection?.androidImage.fields.file.url}></img>
+													</Link>
 												)}
 												{downloadSection?.hasOwnProperty('iOsImage') && (
-													<img className="ml-1 w-1/2 h-full cursor-pointer" src={downloadSection?.iOsImage.fields.file.url}></img>
+													<Link href="/ios">
+														<img className="ml-1 w-1/2 h-full cursor-pointer" src={downloadSection?.iOsImage.fields.file.url}></img>
+													</Link>
 												)}
 											</div>
 
@@ -242,10 +251,14 @@ const Home = () => {
 												</p>
 												<div className="hidden md:flex md:justify-center lg:justify-start mt-10 lg:mt-28 h-20 lg:h-12 xl:h-16">
 													{downloadSection?.hasOwnProperty('androidImage') && (
-														<img className="mr-1 w-1/3 h-full cursor-pointer" src={downloadSection?.androidImage.fields.file.url}></img>
+														<Link href="/android">
+															<img className="mr-1 w-1/3 h-full cursor-pointer" src={downloadSection?.androidImage.fields.file.url}></img>
+														</Link>
 													)}
 													{downloadSection?.hasOwnProperty('iOsImage') && (
-														<img className="ml-1 w-1/3 h-full cursor-pointer" src={downloadSection?.iOsImage.fields.file.url}></img>
+														<Link href="/ios">
+															<img className="ml-1 w-1/3 h-full cursor-pointer" src={downloadSection?.iOsImage.fields.file.url}></img>
+														</Link>
 													)}
 												</div>
 											</div>
@@ -325,27 +338,27 @@ const Home = () => {
 						<div className="mt-6 mx-auto lg:flex pt-12">
 							<div className="w-full lg:w-2/5">
 								<div className="flex justify-center mb-4 md:mb-12 lg:mb-0 lg:ml-20">
-									<a href="#" className="text-gray-400 hover:text-gray-500">
+									<a href="https://www.facebook.com/SoFaDog-107088937656419" target="_blank" className="text-gray-400 hover:text-gray-500">
 										<img className="hidden lg:block w-10" src="/facebook.svg"></img>
 										<img className="lg:hidden w-10" src="/facebook-m.svg"></img>
 									</a>
-									<a href="#" className="ml-3 text-gray-400 hover:text-gray-500">
+									<a href="https://twitter.com/sofadognews" target="_blank" className="ml-3 text-gray-400 hover:text-gray-500">
 										<img className="hidden lg:block w-10" src="/twitter.svg"></img>
 										<img className="lg:hidden w-10" src="/twitter-m.svg"></img>
 									</a>
-									<a href="#" className="ml-3 text-gray-400 hover:text-gray-500">
+									<a href="https://www.youtube.com/channel/UCrAZITjwn7Bh8gm3tZL5TRw" target="_blank" className="ml-3 text-gray-400 hover:text-gray-500">
 										<img className="hidden lg:block w-10" src="/youtube.svg"></img>
 										<img className="lg:hidden w-10" src="/youtube-m.svg"></img>
 									</a>
-									<a href="#" className="ml-3 text-gray-400 hover:text-gray-500">
+									<a href="https://www.linkedin.com/company/so-fa-dog/" target="_blank" className="ml-3 text-gray-400 hover:text-gray-500">
 										<img className="hidden lg:block w-10" src="/linkedin.svg"></img>
 										<img className="lg:hidden w-10" src="/linkedin-m.svg"></img>
 									</a>
-									<a href="#" className="ml-3 text-gray-400 hover:text-gray-500">
+									<a href="https://www.instagram.com/so.fa.dog/" target="_blank" className="ml-3 text-gray-400 hover:text-gray-500">
 										<img className="hidden lg:block w-10" src="/instagram.svg"></img>
 										<img className="lg:hidden w-10" src="/instagram-m.svg"></img>
 									</a>
-									<a href="#" className="ml-3 text-gray-400 hover:text-gray-500">
+									<a href="https://www.tiktok.com/@sofadognews" target="_blank" className="ml-3 text-gray-400 hover:text-gray-500">
 										<img className="hidden lg:block w-10" src="/tiktok.svg"></img>
 										<img className="lg:hidden w-10" src="/tiktok-m.svg"></img>
 									</a>
@@ -356,9 +369,19 @@ const Home = () => {
 									<nav className="lg:-mx-5 -my-2 flex flex-wrap items-center justify-center">
 										{footer?.menu.map((item, i) =>
 											<div className="px-5 py-2" key={i}>
-												<a href="#" className="sfd-font-regular text-base leading-6 sfd-purple-text lg:text-white">
-													{item}
-												</a>
+												{i != 2
+													? [
+														<Link href="/terms">
+															<a href="#" className="sfd-font-regular text-base leading-6 sfd-purple-text lg:text-white">
+																{item}
+															</a>
+														</Link>
+													] : [
+														<a href="#" className="sfd-font-regular text-base leading-6 sfd-purple-text lg:text-white">
+															{item}
+														</a>
+													]
+												}
 											</div>
 										)}
 									</nav>
